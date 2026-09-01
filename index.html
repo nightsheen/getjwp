@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="./assets/jwp/favicon.ico"/>
+        <title>Web Player 播放器| The #1 HTML5 Video Player | JW Player</title>
+        <meta name="description" content="JW Player is the fastest HTML5 player on the web—so your content and ads render reliably and beautifully on every screen." />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet" href="assets/styles/vendor/slick.css">
+        <link rel="stylesheet" href="assets/styles/vendor/slick-theme.css">
+        <link rel="stylesheet" href="assets/styles/vendor/aos.css">
+        <link rel="stylesheet" href="assets/styles/vendor/perfect-scrollbar.css">
+        <link rel="stylesheet" href="assets/styles/css/themes/lite-purple.min.css">
+		<link href='//cdn.bootcdn.net/ajax/libs/font-awesome/6.6.0/css/all.min.css' rel='stylesheet'>
+		
+		<link rel="stylesheet" href="jquery-ui-1.14.0/jquery-ui.min.css">
+		<style type="text/css">
+		body {
+  			font-family: "Microsoft YaHei",微软雅黑,Arial !important;
+		}
+		.text-muted {
+		    text-decoration: line-through;
+		    -webkit-text-decoration-color: #000000 !important;
+		    text-decoration-color: #000000 !important;
+		    text-decoration-thickness: thick !important;
+		    color: yellowgreen !important;
+		}
+		.btn-block {
+		    height: 100px;
+		}
+		</style>
+    </head>
+
+    <body class="text-left">
+        <!-- Pre Loader Strat  -->
+        <div class="loadscreen" id="preloader">
+            <div class="loader spinner-bubble spinner-bubble-primary"></div>
+        </div>
+        <!-- Pre Loader end  -->
+
+        <div class="app-landing-wrap landing_wrap">
+            <div id="landing_wrap" class="landing-gradient-red-orange">
+            
+                <!--=============== Header start ================-->
+                <div class="main-header header-fixed-default" id="home-header">
+                    <nav class="navbar container w-100 navbar-expand-lg navbar-transparent bg-transparent">
+                    
+                        <div class="logo">
+                            <img src="assets/jwp/JWP-logo-w.svg" alt="">
+                        </div>
+
+                        <div class="menu-toggle navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="d-flex align-items-center">
+                                <!-- Mega menu -->
+                                <div class="dropdown mega-menu d-none d-md-block">
+                                    <a href="#" class="btn dropdown-toggle mr-3" id="dropdownMegaMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">烈火资源网</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="row m-0">
+                                            <div class="col-md-4 p-4 bg-img">
+                                                <h2 class="title">烈火资源网<br>https://liehuowang.com</h2>
+                                                <p>付费优质资源下载网站</p>
+                                                <p class="mb-4">专业提供各种虚拟资源下载，PHP开发，wordpress主题定制开发服务</p>
+                                                <button class="btn btn-lg btn-rounded btn-outline-warning" onClick="location.href='https://www.liehuowang.com/'">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="col-md-4 p-4">
+                                                <p class="text-primary text--cap border-bottom-primary d-inline-block">
+                                                    资源
+                                                </p>
+                                                <div class="menu-icon-grid w-auto p-0">
+                                                    <a href="https://www.liehuowang.com/">首页</a>
+                                                    <a href="https://www.liehuowang.com/category/soft">软件</a>
+                                                    <a href="https://www.liehuowang.com/category/code">源码</a>
+                                                    <a href="https://www.liehuowang.com/category/theme">模板</a>
+                                                    <a href="https://www.liehuowang.com/category/theme">插件</a>
+                                                    <a href="https://www.liehuowang.com/category/app">应用</a>
+                                                    <a href="https://www.liehuowang.com/category/game">游戏</a>
+                                                    <a href="https://www.liehuowang.com/category/pdf">电子书</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 p-4">
+                                            	<p class="text-primary text--cap border-bottom-primary d-inline-block">
+                                                    博客
+                                                </p>
+                                                <div class="menu-icon-grid w-auto p-0">
+                                                    <a href="https://www.liehuowang.com/category/blog">BLOG</a>
+                                                </div>
+                                                <!--p class="text-primary text--cap border-bottom-primary d-inline-block">
+                                                    博客</p>
+                                                <ul class="links p-0">
+                                                    <li><a href="https://www.liehuowang.com/category/blog">BLOG</a></li>
+                                                </ul-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / Mega menu -->
+
+                            </div>
+
+                            <div style="margin: auto"></div>
+
+                            <div class="header-part-right">
+
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="scroll-to nav-link m-2" href="#">首页 <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="scroll-to nav-link m-2" href="#features-wrap">优势</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="scroll-to nav-link m-2" href="#left-image-wrap">功能</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="scroll-to nav-link m-2" href="#pricing-wrap">价格</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="scroll-to nav-link m-2" href="#news-wrap">支付</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="scroll-to nav-link m-2" href="#faqs-wrap">FAQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="scroll-to nav-link m-2" href="#contacts-wrap">联系</a>
+                                    </li>
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+
+                <!--=============== Header End ================-->
+
+
+
+
+
+
+
+
+                <!-- ============ Main content start ============= -->
+                <div class="main-content-wrap">
+
+                    <!-- intro-section -->
+
+                    <section id="intro-wrap" class="intro1Wrap text-left text-white">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 intro1LeftSection pb-5">
+                                    <h1 class="font-weight-bold text-white text-42 mb-3 t-shadow">HTML5 WEB PLAYER</h1>
+                                    <p class="text-20 mb-4">More Than Just the Best Video Player</p>
+                                    <div class="mb-5">
+                                        <ul class="list-inline">
+                                            <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i>网络上极快的HTML5视频播放器，因此您的内容和广告在每个屏幕上都能可靠、动态、美观地呈现。</li>
+
+                                            <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i>因为每（毫）秒都很重要。</li>
+                                        </ul>
+                                    </div>
+                                    <div class="intro1Buttons">
+                                        <!--a name="" id="" href="/sessions/signin" class="btn half-button btn-outline-white btn-lg pl-5 pr-5 pb-2 mr-2 mb-4 text-uppercase" href="#" role="button">
+
+                                            Sign in
+                                        </a-->
+                                        <button id="video-button" class="btn half-button btn-warning btn-lg pl-5 pr-5 pb-2 mb-4 text-uppercase" href="#" role="button">
+											观看视频
+                                        </button>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 intro1RightSection d-flex align-items-center">
+
+                                    <div class="intro1ProductImage">
+
+                                        <!--img src="assets/images/landing/svg/v1-header.svg" class="img-responsive" alt=""-->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay" style="background-image: url('assets/jwp/web-player-montage.webp') !important;width:100%">
+
+                        </div>
+
+                    </section>
+                    <!-- end::intro-section -->
+
+                    <!-- start-features -->
+                    <section id="features-wrap" class="features_wrap p-t-b-80">
+                        <div class="container">
+                            <div class="row">
+
+
+                                <div class="col-md-12 section-header mb-5">
+                                    <h2 class="font-weight-bold">Our Exciting Features</h2>
+                                    <p>我们令人兴奋的功能.</p>
+
+                                </div>
+
+
+                                <div class="col-md-6 col-lg-6 col-sm-12 mb-4 mb-lg-0">
+                                    <div class="row">
+
+
+
+                                        <div data-aos="fade-up" class="col-md-6 col-lg-4 col-sm-6 mb-4">
+                                            <div class="card">
+
+                                                <div class="card-body pt-4 pb-4 text-center">
+                                                    <i class="eva eva-clock-outline text-30"></i>
+                                                    <h4 class="card-title pt-2 text-16" style="color:red;font-weight: bold;">最新版v8.36.2</h4>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-aos="fade-up" class="col-md-6 col-lg-4 col-sm-6 mb-4">
+                                            <div class="card">
+
+                                                <div class="card-body pt-4 pb-4 text-center">
+                                                    <i class="eva eva-file-text-outline text-30"></i>
+                                                    <h4 class="card-title pt-2 text-16" style="color:red;font-weight: bold;">二次开发版本</h4>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-aos="fade-up" class="col-md-6 col-lg-4 col-sm-6 mb-4">
+                                            <div class="card">
+
+                                                <div class="card-body pt-4 pb-4 text-center">
+                                                    <i class="eva eva-shopping-bag-outline text-30"></i>
+                                                    <h4 class="card-title pt-2 text-16" style="color:red;font-weight: bold;">支持VAST广告</h4>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-aos="fade-up" class="col-md-6 col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                                            <div class="card">
+
+                                                <div class="card-body pt-4 pb-4 text-center">
+                                                    <i class="eva eva-lock-outline text-30"></i>
+                                                    <h4 class="card-title pt-2 text-16" style="color:red;font-weight: bold;">可离线运行</h4>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-aos="fade-up" class="col-md-6 col-lg-4 col-sm-6 mb-4 mb-lg-0 mb-md-0">
+                                            <div class="card">
+
+                                                <div class="card-body pt-4 pb-4 text-center">
+                                                    <i class="eva eva-people-outline text-30"></i>
+                                                    <h4 class="card-title pt-2 text-16" style="color:red;font-weight: bold;">去水印</h4>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-aos="fade-up" class="col-md-6 col-lg-4 col-sm-6 mb-4 mb-lg-0 mb-md-0">
+                                            <div class="card">
+
+                                                <div class="card-body pt-4 pb-4 text-center">
+                                                    <i class="eva eva-bell-outline text-30 text-gradient"></i>
+                                                    <h4 class="card-title pt-2 text-16" style="color:red;font-weight: bold;">去跟踪代码</h4>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of col-6 -->
+                                <div data-aos="fade-left" class="col-md-6 col-lg-5 col-sm-12 offset-lg-1 d-flex align-items-center">
+
+                                    <img src="assets/jwp/JW-player-main-hero.webp" class="img-responsive w-100" alt="">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end-features -->
+
+
+
+
+
+                    <!-- start::left-img -->
+                    <section id="left-image-wrap" class="left-image-wrap p-t-b-80">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 section-header mb-5">
+                                    <h2 class="font-weight-bold">Performance & Customization</h2>
+                                    <p>高性能和可自定义.</p>
+
+                                </div>
+                                <div class="col-md-6 col-sm-12 mb-5 mb-lg-0 mb-md-0 mt-mb-5">
+
+
+
+                                    <div class="left-image-carousel">
+
+                                        <div>
+                                            <img alt="Card image cap" class="img-responsive w-100 mb-4" src="assets/images/landing/svg/slider4.svg">
+                                        </div>
+                                       <div><img alt="Card image cap" class="img-responsive w-100 mb-4" src="assets/images/landing/svg/slider3.svg"></div>
+                                        <div>
+                                            <img alt="Card image cap" class="img-responsive w-100 mb-4" src="assets/images/landing/svg/slider2.svg">
+                                        </div>
+                                    </div>
+                                    <div class="slick_control_wrap text-center">
+
+
+                                        <button type="button" class="ngu_control_button half-button leftRs btn btn-circle btn-white btn-shadow"><i class="eva eva-chevron-left-outline"></i></button>
+                                        <button type="button" class="ngu_control_button half-button rightRs btn btn-circle btn-white btn-shadow"><i class="eva eva-chevron-right-outline"></i></button>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-md-5 offset-md-1 col-sm-12">
+                                    <div class="row">
+
+
+                                        <div data-aos="fade-left" class="col-md-12 col-sm-6 mb-4">
+                                            <div class="card">
+
+                                                <div class="card-body pt-3 pb-3">
+
+                                                    <h4 class="card-title font-weight-bold">World’s Fastest HTML5 Player:
+                                                    </h4>
+                                                    <p class="m-0">使用世界上第一款、速度最快、功能丰富的HTML5视频播放器，吸引更多观众并从中获利 
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of col  -->
+                                        <div data-aos="fade-right" class="col-md-12 col-sm-6 mb-4">
+                                            <div class="card">
+
+                                                <div class="card-body pt-3 pb-3">
+
+                                                    <h4 class="card-title font-weight-bold">Customize Your Experience:
+                                                    </h4>
+                                                    <p class="m-0">配置您的视频播放器，使用CSS自定义和API创建完全品牌化的体验
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of col  -->
+                                        <div data-aos="fade-up" class="col-md-12 col-sm-6 mb-lg-0 mb-md-0 mb-sm-0">
+                                            <div class="card">
+
+                                                <div class="card-body pt-3 pb-3">
+
+                                                    <h4 class="card-title font-weight-bold">Broadcast Quality Stability: </h4>
+                                                    <p class="m-0">符合HLS和DASH标准的视频播放，吸引观众并增加收入
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of col  -->
+                                        <div data-aos="fade-up" class="col-md-12 col-sm-6 mb-lg-0 mb-md-0 mb-sm-0">
+                                            <div class="card">
+
+                                                <div class="card-body pt-3 pb-3">
+
+                                                    <h4 class="card-title font-weight-bold">Full API Coverage:  </h4>
+                                                    <p class="m-0">使用Javascript API对视频播放体验的各个方面进行编程控制和测量 
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of col  -->
+                                    </div>
+                                </div>
+                                <!-- end of col6 row -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end::left-img -->
+
+
+                    <!-- start::right-img -->
+                    <section id="right-image-wrap" class="right-image-wrap p-t-b-80 light-gray">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 section-header mb-5">
+                                    <h2 class="font-weight-bold">Advertising & Scalability & Extensibility</h2>
+                                    <p>广告和可扩展性.</p>
+
+                                </div>
+
+                                <div class="col-md-12 col-lg-6 col-sm-12 mb-4 mb-lg-0">
+                                    <div class="row m-0">
+                                        <div data-aos="fade-right" class="col-md-6 col-sm-6 mb-4">
+                                            <div class="card">
+
+                                                <div class="card-body d-flex pt-4 pb-4">
+                                                    <div class="mr-2">
+                                                        <i class="eva eva-pie-chart-outline mr-1 text-36"></i>
+                                                    </div>
+                                                    <div class="">
+                                                        <h4 class="card-title font-weight-bold">Optimized for Revenue:
+                                                        </h4>
+                                                        <p class="m-0">一流的广告集成、广泛的标准支持以及具有动态战略规则的创新产品，SSAI和CSAI提供了更多的广告收入和更高的CPM。</p>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of col  -->
+                                        <div data-aos="fade-left" class="col-md-6 col-sm-6 mb-4">
+                                            <div class="card">
+
+                                                <div class="card-body d-flex pt-4 pb-4">
+                                                    <div class="mr-2"><i class="eva eva-clock-outline mr-1 text-36"></i>
+                                                    </div>
+                                                    <div class="">
+                                                        <h4 class="card-title font-weight-bold">Built-in Header Bidding:</h4>
+                                                        <p class="m-0">通过prebid.js支持的头部竞价，轻松管理和优化数十个需求源。</p>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of col  -->
+                                        <div data-aos="fade-up" class="col-md-6 col-sm-6 mb-4 mb-lg-0 mb-md-0 mb-sm-0">
+                                            <div class="card">
+
+                                                <div class="card-body d-flex pt-4 pb-4">
+                                                    <div class="mr-2"><i class="eva eva-lock-outline mr-1 text-36"></i>
+                                                    </div>
+                                                    <div class="">
+                                                        <h4 class="card-title font-weight-bold">Outstream and Instream Ad Capabilities:</h4>
+                                                        <p class="m-0">在视频内或没有视频内容的情况下将视频广告货币化。</p>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of col  -->
+                                        <div data-aos="fade-up" class="col-md-6 col-sm-6 mb-0 mb-lg-0 mb-md-0 mb-sm-0">
+                                            <div class="card">
+
+                                                <div class="card-body d-flex pt-4 pb-4">
+                                                    <div class="mr-2"><i class="eva eva-pricetags-outline mr-1 text-36"></i>
+                                                    </div>
+                                                    <div class="">
+                                                        <h4 class="card-title font-weight-bold">Flexible Business Models:
+                                                        </h4>
+                                                        <p class="m-0">支持直播、VOD、离线DRM、SVOD和TVOD.</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of col  -->
+
+                                    </div>
+                                </div>
+                                <!-- end of col6 row -->
+                                <div class="col-md-12 col-lg-5 col-sm-12 offset-lg-1">
+
+                                    <div class="right-image-carousel">
+
+                                        <div>
+                                            <img alt="Card image cap" class="img-responsive w-100 mb-4" src="assets/images/landing/svg/slider6.svg">
+                                        </div>
+                                        <div><img alt="Card image cap" class="img-responsive w-100 mb-4" src="assets/images/landing/svg/slider7.svg"></div>
+                                        <div>
+                                            <img alt="Card image cap" class="img-responsive w-100 mb-4" src="assets/images/landing/svg/slider8.svg">
+                                        </div>
+                                    </div>
+                                    <div class="slick_control_wrap text-center">
+
+
+                                        <button type="button" class="ngu_control_button half-button right-image-arrow-left leftRs btn btn-circle btn-white btn-shadow"><i class="eva eva-chevron-left-outline"></i></button>
+                                        <button type="button" class="ngu_control_button half-button right-image-arrow-right rightRs btn btn-circle btn-white btn-shadow"><i class="eva eva-chevron-right-outline"></i></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- end::right-img -->
+
+                    <!-- start::price-1 -->
+                    <section id="pricing-wrap" class="pricing-one-wrap p-t-b-80">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 section-header mb-5">
+                                    <h2 class="font-weight-bold">Choose a Plan</h2>
+                                    <p>选择你的方案.(<font color="red"><b>以下均为离线授权，2026-03-25活动价促销，活动随时可能调整</b></font>)</p>
+                                </div>
+                                
+                                <!--div class="col-sm-6 col-md-6 col-lg-12 mb-lg-0 mb-4" style="border: none; border-top: 5px solid #0000FF; height: 5px;"></div><br-->
+                                
+                                <!--div data-aos="fade-right" class="col-sm-6 col-md-6 col-lg-3 mb-lg-0 mb-4 pricing-single-wrap">
+                                    <div class="card o-hidden">
+                                        <div class="card-header text-center p-3 mb-2">
+                                            <h3 class="card-title font-weight-bold mb-2 text-uppercase">starter</h3>
+                                            <p class="text-uppercase mb-0">基础版</p>
+                                        </div>
+                                        <div class="card-body pt-0 text-center">
+
+                                            <p class="card-text mb-2">
+                                                <span class="money text-shadow text-45 font-weight-bold"><sup class="text-30 font-weight-normal">¥</sup>99</span>.00
+                                                <span>/ 3年</span>
+                                            </p>
+                                            <div class="offer-lists mb-4">
+
+                                                <ul class="list-group list-group-flush">
+                                                	<li class="list-group-item p-1">1个域名授权(不可更换授权)</li>
+                                                    <li class="list-group-item p-1 text-muted">送播放器皮肤</li>
+                                                    <li class="list-group-item p-1 text-muted">送广告示例代码</li>
+                                                    <li class="list-group-item p-1">客服服务</li>
+                                                    <li class="list-group-item p-1 text-muted">编程指导</li>
+                                                    <li class="list-group-item p-1 text-muted">定制开发</li>
+                                                </ul>
+
+                                            </div>
+
+                                            <a href="#news-wrap" class="scroll-to btn btn-gradient half-button pl-5 pr-5 pt-2 pb-2">选择</a>
+                                        </div>
+                                    </div>
+                                </div-->
+                                <!-- end of card -->
+                                <!--div data-aos="fade-up" class="col-sm-6 col-md-6 col-lg-3 mb-lg-0 mb-4 pricing-single-wrap">
+                                    <div class="card o-hidden">
+                                        <div class="card-header text-center p-3 mb-2">
+                                            <h3 class="card-title font-weight-bold mb-2 text-uppercase">
+                                                business
+                                            </h3>
+                                            <p class="text-uppercase mb-0">商业版</p>
+                                        </div>
+                                        <div class="card-body pt-0 text-center">
+
+                                            <p class="card-text mb-2">
+                                                <span class="money text-shadow text-45 font-weight-bold"><sup class="text-30 font-weight-normal">¥</sup>199</span>.00
+                                                <span>/ 3年</span>
+                                            </p>
+                                            <div class="offer-lists mb-4">
+
+                                                <ul class="list-group list-group-flush">
+                                                	<li class="list-group-item p-1">1个域名授权(不可更换授权)</li>
+                                                    <li class="list-group-item p-1 text-muted">送播放器皮肤</li>
+                                                    <li class="list-group-item p-1 text-muted">送广告示例代码</li>
+                                                    <li class="list-group-item p-1">客服服务</li>
+                                                    <li class="list-group-item p-1 text-muted">编程指导</li>
+                                                    <li class="list-group-item p-1 text-muted">定制开发</li>
+                                                </ul>
+
+                                            </div>
+
+                                            <a href="#news-wrap" class="scroll-to btn btn-gradient half-button pl-5 pr-5 pt-2 pb-2">选择</a>
+                                        </div>
+                                    </div>
+                                </div-->
+                                <!-- end of card -->
+                                <!--div data-aos="fade-up" class="col-sm-6 col-md-6 col-lg-3 mb-lg-0 mb-md-0 mb-sm-0 mb-4 pricing-single-wrap">
+                                    <div class="card o-hidden">
+                                        <div class="card-header text-center p-3 mb-2">
+                                            <h3 class="card-title font-weight-bold mb-2 text-uppercase">pro</h3>
+                                            <p class="text-uppercase mb-0">专业版</p>
+                                        </div>
+                                        <div class="card-body pt-0 text-center">
+
+                                            <p class="card-text mb-2">
+                                                <span class="money text-shadow text-45 font-weight-bold"><sup class="text-30 font-weight-normal">¥</sup>299</span>.00
+                                                <span>/ 3年</span>
+                                            </p>
+                                            <div class="offer-lists mb-4">
+
+                                                <ul class="list-group list-group-flush">
+                                                	<li class="list-group-item p-1">1个域名授权(不可更换授权)</li>
+                                                    <li class="list-group-item p-1">送播放器皮肤(1套)</li>
+                                                    <li class="list-group-item p-1 text-muted">送广告示例代码</li>
+                                                    <li class="list-group-item p-1">客服服务</li>
+                                                    <li class="list-group-item p-1 text-muted">编程指导</li>
+                                                    <li class="list-group-item p-1 text-muted">定制开发</li>
+                                                </ul>
+
+                                            </div>
+
+                                            <a href="#news-wrap" class="scroll-to btn btn-gradient half-button pl-5 pr-5 pt-2 pb-2">选择</a>
+                                        </div>
+                                    </div>
+                                </div-->
+                                <!-- end of card -->
+                                <!--div data-aos="fade-left" class="col-sm-6 col-md-6 col-lg-3 mb-lg-0 mb-md-0 mb-sm-0 pricing-single-wrap">
+                                    <div class="card o-hidden">
+                                        <div class="card-header text-center p-3 mb-2">
+                                            <h3 class="card-title font-weight-bold mb-2 text-uppercase">premium</h3>
+                                            <p class="text-uppercase mb-0">旗舰版</p>
+                                        </div>
+                                        <div class="card-body pt-0 text-center">
+
+                                            <p class="card-text mb-2">
+                                                <span class="money text-shadow text-45 font-weight-bold"><sup class="text-30 font-weight-normal">¥</sup>399</span>.00
+                                                <span>/ 3年</span>
+                                            </p>
+                                            <div class="offer-lists mb-4">
+
+                                                <ul class="list-group list-group-flush">
+                                                	<li class="list-group-item p-1">1个域名授权(不可更换授权)</li>
+                                                    <li class="list-group-item p-1">送播放器皮肤(1套)</li>
+                                                    <li class="list-group-item p-1 text-muted">送广告示例代码</li>
+                                                    <li class="list-group-item p-1">客服服务</li>
+                                                    <li class="list-group-item p-1 text-muted">编程指导</li>
+                                                    <li class="list-group-item p-1 text-muted">定制开发</li>
+                                                </ul>
+
+                                            </div>
+
+                                            <a href="#news-wrap" class="scroll-to btn btn-gradient half-button pl-5 pr-5 pt-2 pb-2">选择</a>
+                                        </div>
+                                    </div>
+                                </div-->
+                                <!-- end of card -->
+                                
+                                <!--br><div class="col-sm-6 col-md-6 col-lg-12 mb-lg-0 mb-4" style="border: none; border-top: 5px solid #0000FF; height: 5px;"></div><br-->								
+								
+								<!--div data-aos="fade-right" class="col-sm-6 col-md-6 col-lg-3 mb-lg-0 mb-4 pricing-single-wrap">
+                                    <div class="card o-hidden">
+                                        <div class="card-header text-center p-3 mb-2">
+                                            <h3 class="card-title font-weight-bold mb-2 text-uppercase">enterprise</h3>
+                                            <p class="text-uppercase mb-0">企业版</p>
+                                        </div>
+                                        <div class="card-body pt-0 text-center">
+
+                                            <p class="card-text mb-2">
+                                                <span class="money text-shadow text-45 font-weight-bold"><sup class="text-30 font-weight-normal">¥</sup>499</span>.00
+                                                <span>/ <font color="red"><b>9年</b></font></span>
+                                            </p>
+                                            <div class="offer-lists mb-4">
+
+                                                <ul class="list-group list-group-flush">
+                                                	<li class="list-group-item p-1">2个域名授权(不可更换授权)</li>
+                                                    <li class="list-group-item p-1">送播放器皮肤(1套)</li>
+                                                    <li class="list-group-item p-1 text-muted">送广告示例代码</li>
+                                                    <li class="list-group-item p-1">客服服务</li>
+                                                    <li class="list-group-item p-1 text-muted">编程指导</li>
+                                                    <li class="list-group-item p-1 text-muted">定制开发</li>
+                                                </ul>
+
+                                            </div>
+
+                                            <a href="#news-wrap" class="scroll-to btn btn-gradient half-button pl-5 pr-5 pt-2 pb-2">选择</a>
+                                        </div>
+                                    </div>
+                                </div-->
+                                <!-- end of card -->
+                                <!--div data-aos="fade-up" class="col-sm-6 col-md-6 col-lg-3 mb-lg-0 mb-4 pricing-single-wrap">
+                                    <div class="card o-hidden">
+                                        <div class="card-header text-center p-3 mb-2">
+                                            <h3 class="card-title font-weight-bold mb-2 text-uppercase">
+                                                platinum
+                                            </h3>
+                                            <p class="text-uppercase mb-0">铂金版</p>
+                                        </div>
+                                        <div class="card-body pt-0 text-center">
+
+                                            <p class="card-text mb-2">
+                                                <span class="money text-shadow text-45 font-weight-bold"><sup class="text-30 font-weight-normal">¥</sup>599</span>.00
+                                                <span>/ <font color="red"><b>9年</b></font></span>
+                                            </p>
+                                            <div class="offer-lists mb-4">
+
+                                                <ul class="list-group list-group-flush">
+                                                	<li class="list-group-item p-1">2个域名授权(不可更换授权)</li>
+                                                    <li class="list-group-item p-1">送播放器皮肤(2套)</li>
+                                                    <li class="list-group-item p-1 text-muted">送广告示例代码</li>
+                                                    <li class="list-group-item p-1">客服服务</li>
+                                                    <li class="list-group-item p-1 text-muted">编程指导</li>
+                                                    <li class="list-group-item p-1 text-muted">定制开发</li>
+                                                </ul>
+
+                                            </div>
+
+                                            <a href="#news-wrap" class="scroll-to btn btn-gradient half-button pl-5 pr-5 pt-2 pb-2">选择</a>
+                                        </div>
+                                    </div>
+                                </div-->
+                                <!-- end of card -->
+                                <!--div data-aos="fade-up" class="col-sm-6 col-md-6 col-lg-3 mb-lg-0 mb-md-0 mb-sm-0 mb-4 pricing-single-wrap">
+                                    <div class="card o-hidden">
+                                        <div class="card-header text-center p-3 mb-2">
+                                            <h3 class="card-title font-weight-bold mb-2 text-uppercase">ads</h3>
+                                            <p class="text-uppercase mb-0">广告版</p>
+                                        </div>
+                                        <div class="card-body pt-0 text-center">
+
+                                            <p class="card-text mb-2">
+                                                <span class="money text-shadow text-45 font-weight-bold"><sup class="text-30 font-weight-normal">¥</sup>699</span>.00
+                                                <span>/ <font color="red"><b>9年</b></font></span>
+                                            </p>
+                                            <div class="offer-lists mb-4">
+
+                                                <ul class="list-group list-group-flush">
+                                                	<li class="list-group-item p-1" style="color: red;font-weight: blod;">2个域名授权(可更换授权)</li>
+                                                    <li class="list-group-item p-1">送播放器皮肤(2套)</li>
+                                                    <li class="list-group-item p-1">送广告示例代码</li>
+                                                    <li class="list-group-item p-1">客服服务</li>
+                                                    <li class="list-group-item p-1 text-muted">编程指导</li>
+                                                    <li class="list-group-item p-1 text-muted">定制开发</li>
+                                                </ul>
+
+                                            </div>
+
+                                            <a href="#news-wrap" class="scroll-to btn btn-gradient half-button pl-5 pr-5 pt-2 pb-2">选择</a>
+                                        </div>
+                                    </div>
+                                </div-->
+                                <!-- end of card -->
+                                <!--div data-aos="fade-left" class="col-sm-6 col-md-6 col-lg-3 mb-lg-0 mb-md-0 mb-sm-0 pricing-single-wrap">
+                                    <div class="card o-hidden">
+                                        <div class="card-header text-center p-3 mb-2 bg-gradient text-white">
+                                            <h3 class="card-title font-weight-bold mb-2 text-uppercase text-white">unlimited</h3>
+                                            <p class="text-uppercase mb-0">解锁版</p>
+                                        </div>
+                                        <div class="card-body pt-0 text-center">
+
+                                            <p class="card-text mb-2">
+                                                <span class="money text-shadow text-45 font-weight-bold"><sup class="text-30 font-weight-normal">¥</sup>799</span>.00
+                                                <span>/ <font color="red"><b>9年</b></font></span>
+                                            </p>
+                                            <div class="offer-lists mb-4">
+
+                                                <ul class="list-group list-group-flush">
+                                                	<li class="list-group-item p-1" style="color: red;font-weight: blod;">2个域名授权(可更换授权)</li>
+                                                    <li class="list-group-item p-1">送播放器皮肤(2套)</li>
+                                                    <li class="list-group-item p-1">送广告示例代码</li>
+                                                    <li class="list-group-item p-1">客服服务</li>
+                                                    <li class="list-group-item p-1">编程指导</li>
+                                                    <li class="list-group-item p-1">定制开发</li>
+                                                </ul>
+
+                                            </div>
+
+                                            <a href="#news-wrap" class="scroll-to btn btn-gradient half-button pl-5 pr-5 pt-2 pb-2">选择</a>
+                                        </div>
+                                    </div>
+                                </div-->
+                                <!-- end of card -->
+                                
+								<br><div class="col-sm-6 col-md-6 col-lg-12 mb-lg-0 mb-4" style="border: none; border-top: 5px solid #0000FF; height: 5px;"></div><br>								
+								
+								<div data-aos="fade-right" class="col-sm-6 col-md-6 col-lg-4 mb-lg-0 mb-4 pricing-single-wrap">
+                                    <div class="card o-hidden">
+                                        <div class="card-header text-center p-3 mb-2">
+                                            <h3 class="card-title font-weight-bold mb-2 text-uppercase">starter</h3>
+                                            <p class="text-uppercase mb-0">入门版</p>
+                                        </div>
+                                        <div class="card-body pt-0 text-center">
+
+                                            <p class="card-text mb-2">
+                                                <span class="money text-shadow text-45 font-weight-bold"><sup class="text-30 font-weight-normal">¥</sup>99</span>.00
+                                                <span>/ <font color="red"><b>套</b></font></span>
+                                            </p>
+                                            <div class="offer-lists mb-4">
+
+                                                <ul class="list-group list-group-flush">
+													<li class="list-group-item p-1">版本：8.24.3(不再更新)</li>
+                                                	<li class="list-group-item p-1">无需授权</li>
+                                                    <li class="list-group-item p-1 text-muted">送播放器皮肤</li>
+                                                    <li class="list-group-item p-1 text-muted">送广告示例代码</li>
+                                                    <li class="list-group-item p-1 text-muted">编程指导</li>
+                                                </ul>
+
+                                            </div>
+
+                                            <a href="#news-wrap" class="scroll-to btn btn-gradient half-button pl-5 pr-5 pt-2 pb-2">选择</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of card -->
+								
+								<div data-aos="fade-right" class="col-sm-6 col-md-6 col-lg-4 mb-lg-0 mb-4 pricing-single-wrap">
+                                    <!--div class="card o-hidden">
+                                        <div class="card-header text-center p-3 mb-2">
+                                            <h3 class="card-title font-weight-bold mb-2 text-uppercase">enterprise</h3>
+                                            <p class="text-uppercase mb-0">企业版</p>
+                                        </div>
+                                        <div class="card-body pt-0 text-center">
+
+                                            <p class="card-text mb-2">
+                                                <span class="money text-shadow text-45 font-weight-bold"><sup class="text-30 font-weight-normal">¥</sup>499</span>.00
+                                                <span>/ <font color="red"><b>套</b></font></span>
+                                            </p>
+                                            <div class="offer-lists mb-4">
+
+                                                <ul class="list-group list-group-flush">
+													<li class="list-group-item p-1">版本：8.36.2</li>
+                                                	<li class="list-group-item p-1">2个域名授权(1个本地+1个线上)</li>
+                                                    <li class="list-group-item p-1">送播放器皮肤(1套)</li>
+                                                    <li class="list-group-item p-1 text-muted">送广告示例代码</li>
+                                                    <li class="list-group-item p-1">客服服务</li>
+                                                    <li class="list-group-item p-1">编程指导</li>
+                                                    <li class="list-group-item p-1 text-muted">定制开发</li>
+                                                </ul>
+
+                                            </div>
+
+                                            <a href="#news-wrap" class="scroll-to btn btn-gradient half-button pl-5 pr-5 pt-2 pb-2">选择</a>
+                                        </div>
+                                    </div-->
+                                </div>
+                                <!-- end of card -->
+								
+								<div data-aos="fade-up" class="col-sm-6 col-md-6 col-lg-4 mb-lg-0 mb-md-0 mb-sm-0 mb-4 pricing-single-wrap">
+                                    <div class="card o-hidden">
+                                        <div class="card-header text-center p-3 mb-2">
+                                            <h3 class="card-title font-weight-bold mb-2 text-uppercase">FULL</h3>
+                                            <p class="text-uppercase mb-0">全功能版</p>
+                                        </div>
+                                        <div class="card-body pt-0 text-center">
+
+                                            <p class="card-text mb-2">
+                                                <span class="money text-shadow text-45 font-weight-bold"><sup class="text-30 font-weight-normal">¥</sup>299</span>.00
+                                                <span>/ <font color="red"><b>套</b></font></span>
+                                            </p>
+                                            <div class="offer-lists mb-4">
+
+                                                <ul class="list-group list-group-flush">
+													<li class="list-group-item p-1">版本：8.36.2(不定期更新)</li>
+                                                	<li class="list-group-item p-1" style="color: red;font-weight: blod;">本地授权（3年）</li>
+                                                    <li class="list-group-item p-1">送播放器皮肤(2套)</li>
+                                                    <li class="list-group-item p-1">送广告示例代码</li>
+                                                    <li class="list-group-item p-1">编程指导</li>
+                                                </ul>
+
+                                            </div>
+
+                                            <a href="#news-wrap" class="scroll-to btn btn-gradient half-button pl-5 pr-5 pt-2 pb-2">选择</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of card -->
+                                <br><div class="col-sm-6 col-md-6 col-lg-12 mb-lg-0 mb-4" style="border: none; border-top: 5px solid #0000FF; height: 5px;"></div>
+								
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end::price-1 -->
+
+
+
+                    <!-- start::news-2 -->
+                    <section id="news-wrap" class="news-two-wrap light-gray p-t-b-80">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 section-header mb-5">
+                                    <h2 class="font-weight-bold">Choose our Donate code</h2>
+                                    <p>选择捐赠方式</p>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div data-aos="fade-right" class="col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-4">
+                                    <div class="card text-left o-hidden">
+                                        <div class="card_img_left w-40 float-left">
+                                            <img class="card-img" src="assets/jwp/coffee.png" alt="Card image">
+                                        </div>
+
+                                        <div class="card_right_content w-60 p-3 float-right">
+                                            <div class="pt-3 pb-4">
+                                                <h3 class="m-0 text-capitalize font-weight-bold">微信赞赏码捐赠</h3>
+                                                <h5 class="font-weight-light text-uppercase">Donate Code</h5>
+                                            </div>
+
+                                            <div class="font-weight-light pb-3">
+                                                <p>Buy me a coffee~
+                                                </p>
+
+                                                <a routerlink="/landing/blog-details" class="btn half-button text-white btn-gradient">扫左边赞赏码</a>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of col -->
+                                <div data-aos="fade-left" class="col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-0">
+                                    <div class="card text-left o-hidden">
+                                        <div class="card_img_left w-40 float-left">
+                                            <img class="card-img" src="assets/jwp/coffee.png" alt="Card image">
+                                        </div>
+
+                                        <div class="card_right_content w-60 p-3 float-right">
+                                            <div class="pt-3 pb-4">
+                                                <h3 class="m-0 text-capitalize font-weight-bold">微信赞赏码捐赠
+                                                </h3>
+                                                <h5 class="font-weight-light text-uppercase">Donate Code</h5>
+                                            </div>
+
+                                            <div class="font-weight-light pb-3">
+                                                <p>Buy me a coffee~
+                                                </p>
+
+                                                <a routerlink="/landing/blog-details" class="btn half-button btn-gradient text-white">扫左边赞赏码</a>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of col -->
+
+
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- end::news-2 -->
+
+
+                    <!-- start::faq -->
+                    <section class="faqs-wrap p-t-b-80" id="faqs-wrap">
+                        <div class="container">
+                            <div class="row">
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 mb-4 mb-lg-0 mb-md-0 mb-4">
+                                    <div class="section-header mb-5">
+                                        <h2 class="font-weight-bold">FAQ</h2>
+                                        <p>注意事项</p>
+
+                                    </div>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card ul-card__border-radius">
+                                            <div class="card-header">
+                                                <h6 class="card-title mb-0">
+                                                    <a data-toggle="collapse" class="text-default" href="#accordion-item-group1">#1</a>
+                                                </h6>
+                                            </div>
+
+                                            <div id="accordion-item-group1" class="collapse show" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <font color="red"><b>直接微信扫码捐赠，备注改为你的QQ号码。</b></font>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card ul-card__border-radius">
+                                            <div class="card-header">
+                                                <h6 class="card-title mb-0">
+                                                    <a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-group2">#2</a>
+                                                </h6>
+                                            </div>
+
+                                            <div id="accordion-item-group2" class="collapse show" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <font color="red"><b>然后联系博主QQ 251023596（加我为好友，这一步是必须的）。然后通过QQ告诉我订单号（截图）。</b></font>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card ul-card__border-radius">
+                                            <div class="card-header">
+                                                <h6 class="card-title mb-0">
+                                                    <a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-default3">#3</a>
+                                                </h6>
+                                            </div>
+
+                                            <div id="accordion-item-default3" class="collapse show" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <font color="red"><b>之后您无需任何操作，播放器代码将通过QQ发送给您。<br>（工作时间：8：00 ~ 22：00）</b></font>
+                                                </div>
+                                            </div>
+                                        </div>
+										
+										<div class="card ul-card__border-radius">
+                                            <div class="card-header">
+                                                <h6 class="card-title mb-0">
+                                                    <a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-default3">#4</a>
+                                                </h6>
+                                            </div>
+
+                                            <div id="accordion-item-default3" class="collapse show" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <font color="red"><b>jwplayer不议价，还请议价的兄弟高抬贵手！<br>由于代码具有可复制性，一旦购买不支持退款，请三思而后行。</b></font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of col -->
+                                <div class="col-md-5 offset-md-1 col-sm-12 d-flex align-items-center">
+
+                                    <!--img data-aos="fade-left" src="assets/images/landing/svg/faqs2.svg" class="img-responsive w-100" alt=""-->
+                                    <img data-aos="fade-left" src="assets/jwp/qq.jpg" class="img-responsive w-100" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- end::faq -->
+
+
+
+                    <!-- start::contact-form -->
+                    <section id="contacts-wrap" class="contact-form-wrap light-gray p-t-b-80">
+                        <div class="container">
+                            <div class="row">
+
+
+
+                                <div data-aos="fade-right" class="form-wrap col-md-6 mb-4">
+                                    <div class="section-header mb-5">
+                                        <h2 class="font-weight-bold">Get in Touch With Us !</h2>
+                                        <p>和我们取得联系</p>
+
+                                    </div>
+                                    <div *ngif="success" class="alert alert-success alert-dismissible fade show" role="alert" [@animate]="{value:'*',params:{y:'-120px',opacity:'0',delay:'100ms', duration: '400ms'}}">
+                                        <button type="button" class="close" onclick="success=false">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <strong>Your Message Will Sent succefully</strong>
+                                    </div>
+
+                                    <div class="col-md-12">
+										<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=rTdG4rsHNMhblnPk6rCm8RMrzRjltI9T&jump_from=webapi&authKey=sNtu/XU758zU7yFPyASpCXu9ECGw2BwvP9SXKw1896Ex5ZyfUk1BesKhmJPrgRA7"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="全栈开发" title="全栈开发"></a>
+                                        <button type="submit" onClick="location.href='https://www.liehuowang.com/'" class="btn btn-block half-button form-submit-button btn-large btn-gradient">发送消息</button>
+									</div>
+
+
+
+
+
+                                </div>
+                                <div class="col-md-6 align-items-center">
+                                    <div class="right-contact-wrap ml-5">
+										<img data-aos="fade-left" src="assets/images/qqgroup.png" class="img-responsive zoom-fade" alt="QQ群">
+
+                                        <!-- <div class="address-wrap mb-4">-->
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- end::contact-form -->
+
+                    <!-- Footer Start -->
+                    <div class="flex-grow-1"></div>
+
+                    <section class="footer_wrap" id="footer-wrap">
+                        <div class="container">
+                            <div class="row">
+
+
+                                <div data-aos="fade-up" class="col-md-3 mb-4">
+                                    <div class="o-hidden text-left">
+
+
+
+                                        <div class="">
+                                            <h4 class="card-title font-weight-bold">JWP</h4>
+                                            <p class="">最好的视频播放器</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <!-- end of col -->
+                                <div data-aos="fade-up" class="col-md-3 mb-4">
+                                    <div class="o-hidden text-left">
+
+
+
+                                        <div class="">
+                                            <h4 class="card-title font-weight-bold">Other Pages</h4>
+                                            <div class="mb-5 lead">
+                                                <ul class="list-inline">
+                                                    <li class="mb-3"><a class="scroll-to" href="#features-wrap">优势</a></li>
+                                                    <li class="mb-3"><a class="scroll-to" href="#left-image-wrap">功能</a>
+                                                    </li>
+                                                    <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i><a class="scroll-to" href="#pricing-wrap">价格</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <!-- end of col -->
+                                <div data-aos="fade-up" class="col-md-3 mb-4 mb-lg-0 mb-md-0">
+                                    <div class="o-hidden text-left">
+
+                                        <div class="">
+                                            <h4 class="card-title font-weight-bold">Awesome Features</h4>
+                                            <div class="mb-5 lead">
+                                                <ul class="list-inline">
+                                                    <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i><a class="scroll-to" href="#news-wrap">支付</a>
+                                                    </li>
+                                                    <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i><a class="scroll-to" href="#faqs-wrap">FAQ</a>
+                                                    </li>
+                                                    <li class="mb-3"><a class="scroll-to" href="#contacts-wrap">联系</a></li>
+                                                </ul>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of col -->
+                                <div data-aos="fade-up" class="col-md-3 mb-lg-0 mb-md-0">
+                                    <div class="o-hidden text-left">
+
+                                        <div class="">
+                                            <h4 class="card-title font-weight-bold">Contact Info</h4>
+                                            <div class="address-wrap mb-3">
+
+                                                <ul class="list-group list-unstyled">
+                                                    <li class=""> <i class="eva eva-pin-outline mr-2"></i>北京海淀区
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="address-wrap mb-3">
+
+                                                <ul class="list-group list-unstyled">
+                                                    <li class=""><i class="eva eva-email-outline mr-2"></i>251023596@qq.com
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+                                            <div class="address-wrap mb-3">
+
+                                                <ul class="list-group list-unstyled">
+                                                    <li class=""><i class="eva eva-phone-call-outline mr-2"></i>
+                                                        QQ: 251023596
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+
+                                            <section class="social-wrap">
+
+                                                <div class="social-btns-wrap">
+
+                                                    <a class="social-btn text-30 facebook ml-0" href="#"><i class="fa-brands fa-qq"></i></a>
+
+                                                    <a class="social-btn text-30 twitter" href="#"><i class="fa-brands fa-weixin"></i></a>
+
+                                                    <!--a class="social-btn text-30 google" href="#"><i class="fa-brands fa-google"></i></a-->
+
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of col -->
+								
+								<style>
+								/*自定义样式*/
+								.with-love {
+									display: inline-block;
+									color: red;
+									margin: 0 5px;
+									animation: iconAnimate 1.33s ease-in-out infinite;
+								}
+								@-moz-keyframes iconAnimate {
+									0%, 100% {
+										transform:scale(1)
+									}
+									10%, 30% {
+										transform:scale(.9)
+									}
+									20%, 40%, 50%, 60%, 70%, 80% {
+										transform:scale(1.1)
+									}
+								}
+								@-webkit-keyframes iconAnimate {
+									0%, 100% {
+										transform:scale(1)
+									}
+									10%, 30% {
+										transform:scale(.9)
+									}
+									20%, 40%, 50%, 60%, 70%, 80% {
+										transform:scale(1.1)
+									}
+								}
+								@-o-keyframes iconAnimate {
+									0%, 100% {
+										transform:scale(1)
+									}
+									10%, 30% {
+										transform:scale(.9)
+									}
+									20%, 40%, 50%, 60%, 70%, 80% {
+										transform:scale(1.1)
+									}
+								}
+								@keyframes iconAnimate {
+									0%, 100% {
+										transform:scale(1)
+									}
+									10%, 30% {
+										transform:scale(.9)
+									}
+									20%, 40%, 50%, 60%, 70%, 80% {
+										transform:scale(1.1)
+									}
+								}
+								.sep
+								{
+									color:red
+								}
+								</style>
+								<div class="y-row">
+									<div class="taoyuming tao-main-body" style="text-align:left">
+										<div id="links" class="col-md-12" style="font-size:18px;font-weight:blod">
+											<label style="font-size:18px;font-weight:bold">合作站点：</label>
+											<a href="https://www.bingdian.net/" target="_blank">冰点域名</a> | 
+											<a style="color:red;font-weght:bold" href="https://www.liehuowang.com/" target="_blank">烈火网</a> |
+										</div>
+										
+										<div id="links" class="col-md-12" style="font-size:18px;font-weight:blod">
+											<label style="font-size:18px;font-weight:bold">友情链接：</label>
+											<a href="https://ruby-china.org/sites" target="_blank">酷站</a> |
+											<a href="https://www.wenxiaobai.com/" target="_blank">问小白</a> |
+											<a href="https://www.n.cn/" target="_blank">360纳米AI</a> |
+										</div>
+											
+										<footer id="footer" class="col-md-12" style="margin-top: 5px;">
+											<div class="inner">
+												<p style="font-size:18px;font-weight:bold">
+												Copyright © 2025 https://www.getjwp.com/. All Rights Reserved。&nbsp;&nbsp;|&nbsp;&nbsp;
+												Made with <span class='with-love'><i class='fas fa-heartbeat'></i></span>
+												</p>
+												
+											</div>
+											
+											<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+											<script>LA.init({id:"KkGkQ5CSNP9FaeY4",ck:"KkGkQ5CSNP9FaeY4",autoTrack:true,screenRecord:true})</script>
+											<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/KkGkQ5CSNP9FaeY4"><img src="https://sdk.51.la/icon/2-4.png"></a>
+											<script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/KkGkQ5CSNP9FaeY4/quote.js?theme=3&f=12"></script>
+										</footer>
+									</div>
+								</div>
+                            </div>
+                        </div>
+						
+                    </section>
+                    <!-- end footer -->
+
+                    <!-- customizer start -->
+                    <!--div class="customizer card">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="handle">
+                                    <i class="eva eva-settings-2-outline animated infinite rotateInUpLeft"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-12 o-hidden">
+
+                                <div class="colors_wrap" data-perfect-scrollbar data-suppress-scroll-x="true">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Solid Colors</h2>
+                                        <a name="" id="" data-class="teal" class="change-bg btn teal btn-circle m-2" role="button"></a>
+                                        <a name="" id="" data-class="blue" class="change-bg btn blue btn-circle m-2" role="button"></a>
+                                        <a data-class="midnight-blue" class="change-bg btn midnight-blue btn-circle m-2" role="button"></a>
+                                        <a data-class="indigo" class="change-bg btn indigo btn-circle m-2" role="button"></a>
+                                        <a data-class="indigo-light" class="change-bg btn indigo-light btn-circle m-2" role="button"></a>
+                                        <a data-class="indigo-deep" class="change-bg btn indigo-deep btn-circle m-2" role="button"></a>
+                                        <a data-class="indigo-ocean" class="change-bg btn indigo-ocean btn-circle m-2" role="button"></a>
+                                        <a data-class="dark-purple" class="change-bg btn dark-purple btn-circle m-2" role="button"></a>
+                                        <a data-class="purple" class="change-bg btn purple btn-circle m-2" role="button"></a>
+                                        <a data-class="pink" class="change-bg btn pink btn-circle m-2" role="button"></a>
+                                        <a data-class="pink-light" class="change-bg btn pink-light btn-circle m-2" role="button"></a>
+                                        <a data-class="red" class="change-bg btn red btn-circle m-2" role="button"></a>
+                                        <a data-class="red-light" class="change-bg btn red-light btn-circle m-2" role="button"></a>
+                                        <a data-class="red-deep" class="change-bg btn red-deep btn-circle m-2" role="button"></a>
+                                        <a data-class="red-extra" class="change-bg btn red-extra btn-circle m-2" role="button"></a>
+                                        <a data-class="gray" class="change-bg btn gray btn-circle m-2" role="button"></a>
+                                        <a data-class="light-black" class="change-bg btn light-black btn-circle m-2" role="button"></a>
+                                        <a data-class="slate-gray" class="change-bg btn slate-gray btn-circle m-2" role="button"></a>
+                                        <a data-class="orange" class="change-bg btn orange btn-circle m-2" role="button"></a>
+                                        <a data-class="brown" class="change-bg btn brown btn-circle m-2" role="button"></a>
+
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h2 class="card-title">Gradient Colors</h2>
+                                        <a data-class="gradient-purple-indigo" class="change-bg btn gradient-purple-indigo btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-blue-red" class="change-bg btn gradient-blue-red btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-red-orange" class="change-bg btn gradient-red-orange btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-black-blue" class="change-bg btn gradient-black-blue btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-black-gray" class="change-bg btn gradient-black-gray btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-steel-gray" class="change-bg btn gradient-steel-gray btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-grade-gray" class="change-bg btn gradient-grade-gray btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-cristal-clear" class="change-bg btn gradient-cristal-clear btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-cool-blue" class="change-bg btn gradient-cool-blue btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-moonlight-asteriod" class="change-bg btn gradient-moonlight-asteriod btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-hervey" class="change-bg btn gradient-hervey btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-altra-violet" class="change-bg btn gradient-altra-violet btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-slight-ocean" class="change-bg btn gradient-slight-ocean btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-red-sunset" class="change-bg btn gradient-red-sunset btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-quepal" class="change-bg btn gradient-quepal btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-lawrencium" class="change-bg btn gradient-lawrencium btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-meridian" class="change-bg btn gradient-meridian btn-circle m-2" role="button"></a>
+                                        <a data-class="gradient-altra-violet')" class="btn gradient-altra-violet btn-circle m-2" role="button"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div-->
+                    <!-- end of customizer -->
+
+                </div>
+                <!-- ============ Main content End ============= -->
+
+
+
+
+            </div>
+			
+        </div>
+		
+		<div id="video" style="text-align: center;vertical-align: middle;">
+			<div id="jwplayer"></div>
+		</div>
+        <!--=============== End app-Landing-wrap ================-->
+
+
+		
+        <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+		
+		<script src="//cdn.bootcdn.net/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+		<script src="jquery-ui-1.14.0/jquery-ui.min.js"></script>
+		<script src="jwplayer/jwplayer.js"></script>
+		
+        <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/vendor/perfect-scrollbar.min.js"></script>
+        <script src="assets/js/vendor/slick.min.js"></script>
+        <script src="assets/js/es5/scroll.min.js"></script>
+        <script src="assets/js/es5/slick.script.min.js"></script>
+        <script src="assets/js/vendor/aos.js"></script>
+        <script src="assets/js/es5/script.min.js"></script>
+		
+		<script type="text/javascript">
+		$(document).ready(function(){
+			const playerInstance = jwplayer('jwplayer').setup({
+				base: './jwplayer',
+				file: 'hybird_video_audio.webm',
+				image: 'poster.jpg',
+				type: 'webm',
+				//aspectratio: '16:9',
+				title: '测试视频标题',
+				description: '这是一个测试视频的描述。',
+				//autostart: 'viewable',
+				stretching: 'exactfit',
+				repeat: false,
+				volume: 60,
+				width: '100%',  
+			    height: '100%',  
+			    dock: true,
+				controls:true,
+				'displaydescription': true,
+			    'displaytitle': true,
+			    'playbackRateControls': false,
+			    'preload': 'metadata',
+			    'stretching': 'uniform'
+			});
+			
+			const buttonId = 'download-video-button';
+			const iconPath = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgMTloMTh2Mkgzdi0yem0xMC01LjgyOEwxOS4wNzEgNy4xbDEuNDE0IDEuNDE0TDEyIDE3IDMuNTE1IDguNTE1IDQuOTI5IDcuMSAxMSAxMy4xN1YyaDJ2MTEuMTcyeiIgZmlsbD0icmdiYSgyNDcsMjQ3LDI0NywxKSIvPjwvc3ZnPg==';
+			const tooltipText = '下载';
+			
+			// Call the player's `addButton` API method to add the custom button
+			playerInstance.addButton(iconPath, tooltipText, buttonClickAction, buttonId);
+			
+			// This function is executed when the button is clicked
+			function buttonClickAction() {
+			  const playlistItem = playerInstance.getPlaylistItem();
+			
+			  // Create an anchor element
+			  const anchor = document.createElement('a');
+			
+			  // Set the anchor's `href` attribute to the media's file URL
+			  const fileUrl = playlistItem.file;
+			  anchor.setAttribute('href', fileUrl);
+			
+			  // set the anchor's `download` attribute to the media's file name
+			  const downloadName = playlistItem.file.split('/').pop();
+			  anchor.setAttribute('download', downloadName);
+			
+			  // Set the anchor's style to hide it when it's added to the page
+			  anchor.style.display = 'none';
+			
+			  // Add the anchor to the page
+			  document.body.appendChild(anchor);
+			
+			  // Trigger a click event to activate the anchor
+			  anchor.click();
+			
+			  // Remove the anchor from the page, it's not needed anymore
+			  document.body.removeChild(anchor);
+			}
+			
+			playerInstance.on('ready', function() {
+			  // Move the timeslider in-line with other controls
+			  const playerContainer = playerInstance.getContainer();
+			  const buttonContainer = playerContainer.querySelector('.jw-button-container');
+			  const spacer = buttonContainer.querySelector('.jw-spacer');
+			  const timeSlider = playerContainer.querySelector('.jw-slider-time');
+			  buttonContainer.replaceChild(timeSlider, spacer);
+			});
+			
+			$("#video-button").click(function(){
+				$("#video").dialog({
+					resizable: true,
+					height: "600",
+					width: 800,
+					modal: true
+				});
+				$(".ui-dialog-titlebar > button").addClass("ui-button ui-corner-all ui-widget ui-button-icon-only").append('<span class="ui-button-icon ui-icon ui-icon-closethick"></span>').click(function(){
+					playerInstance.stop();
+				});
+			});
+		});
+		</script>
+    </body>
+
+</html>

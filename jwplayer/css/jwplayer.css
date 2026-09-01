@@ -1,0 +1,896 @@
+/* line 1, src\css\jwplayer\imports\reset.less */
+.jw-reset {
+  text-align: left;
+  direction: ltr;
+}
+/* line 7, src\css\jwplayer\imports\reset.less */
+.jw-reset-text,
+.jw-reset {
+  color: inherit;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  float: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  list-style: none;
+  text-transform: none;
+  vertical-align: baseline;
+  border: 0;
+  font-variant: inherit;
+  font-stretch: inherit;
+  /* non-standard prefixed style used in Chrome, Safari, and some MS browsers.  Not Autoprefixed */
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+/* line 13, src\css\shared-imports\mixins\rect.less */
+body .jw-error,
+body .jwplayer.jw-state-error {
+  height: 100%;width: 100%;
+}
+/* line 13, src\css\shared-imports\mixins\position.less */
+.jw-title {
+  position: absolute;top: 0;
+}
+/* line 26, src\css\shared-imports\mixins.less */
+.jw-background-color {
+  background: rgba(0, 0, 0, 0.4);
+}
+/* line 30, src\css\shared-imports\mixins.less */
+.jw-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 34, src\css\shared-imports\mixins.less */
+.jw-knob {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
+}
+/* line 39, src\css\shared-imports\mixins.less */
+.jw-button-color {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 44, src\css\shared-imports\mixins.less */
+:not(.jw-flag-touch) .jw-button-color:not(.jw-logo-button):focus,
+:not(.jw-flag-touch) .jw-button-color:not(.jw-logo-button):hover {
+  color: #fff;
+}
+/* line 50, src\css\shared-imports\mixins.less */
+.jw-toggle {
+  color: #fff;
+}
+/* line 53, src\css\shared-imports\mixins.less */
+.jw-toggle.jw-off {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 56, src\css\shared-imports\mixins.less */
+.jw-toggle.jw-off:focus {
+  color: #fff;
+}
+/* line 61, src\css\shared-imports\mixins.less */
+.jw-toggle:focus {
+  outline: none;
+}
+/* line 66, src\css\shared-imports\mixins.less */
+:not(.jw-flag-touch) .jw-toggle.jw-off:hover {
+  color: #fff;
+}
+/* Slider colors */
+/* line 71, src\css\shared-imports\mixins.less */
+.jw-rail {
+  background: rgba(255, 255, 255, 0.3);
+}
+/* line 75, src\css\shared-imports\mixins.less */
+.jw-buffer {
+  background: rgba(255, 255, 255, 0.3);
+}
+/* line 79, src\css\shared-imports\mixins.less */
+.jw-progress {
+  background: #f2f2f2;
+}
+/* Styles for menu elements, volume, slider thumbnail */
+/* line 84, src\css\shared-imports\mixins.less */
+.jw-time-tip,
+.jw-volume-tip {
+  border: 0;
+}
+/* line 89, src\css\shared-imports\mixins.less */
+.jw-slider-volume.jw-volume-tip.jw-background-color.jw-slider-vertical {
+  background: none;
+}
+/* line 93, src\css\shared-imports\mixins.less */
+.jw-skip {
+  padding: 0.5em;
+  outline: none;
+}
+/* line 97, src\css\shared-imports\mixins.less */
+.jw-skip .jw-skiptext,
+.jw-skip .jw-skip-icon {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 104, src\css\shared-imports\mixins.less */
+.jw-skip.jw-skippable:hover .jw-skip-icon,
+.jw-skip.jw-skippable:focus .jw-skip-icon {
+  color: #fff;
+}
+/*
+        Chromecast
+        */
+/* line 115, src\css\shared-imports\mixins.less */
+.jw-icon-cast google-cast-launcher {
+  --connected-color: #fff;
+  --disconnected-color: rgba(255, 255, 255, 0.8);
+}
+/* line 119, src\css\shared-imports\mixins.less */
+.jw-icon-cast google-cast-launcher:focus {
+  outline: none;
+}
+/* line 123, src\css\shared-imports\mixins.less */
+.jw-icon-cast google-cast-launcher.jw-off {
+  --connected-color: rgba(255, 255, 255, 0.8);
+}
+/* line 128, src\css\shared-imports\mixins.less */
+.jw-icon-cast:focus google-cast-launcher {
+  --connected-color: #fff;
+  --disconnected-color: #fff;
+}
+/* line 133, src\css\shared-imports\mixins.less */
+.jw-icon-cast:hover google-cast-launcher {
+  --connected-color: #fff;
+  --disconnected-color: #fff;
+}
+/* Next up display */
+/* line 140, src\css\shared-imports\mixins.less */
+.jw-nextup-container {
+  bottom: 2.5em;
+  padding: 5px 0.5em;
+}
+/* line 145, src\css\shared-imports\mixins.less */
+.jw-nextup {
+  border-radius: 0;
+}
+/* line 152, src\css\shared-imports\mixins.less */
+.jw-color-active {
+  color: #fff;
+  stroke: #fff;
+  border-color: #fff;
+}
+/* line 159, src\css\shared-imports\mixins.less */
+:not(.jw-flag-touch) .jw-color-active-hover:hover,
+:not(.jw-flag-touch) .jw-color-active-hover:focus {
+  color: #fff;
+  stroke: #fff;
+  border-color: #fff;
+}
+/* line 167, src\css\shared-imports\mixins.less */
+.jw-color-inactive {
+  color: rgba(255, 255, 255, 0.8);
+  stroke: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+/* line 174, src\css\shared-imports\mixins.less */
+:not(.jw-flag-touch) .jw-color-inactive-hover:hover {
+  color: rgba(255, 255, 255, 0.8);
+  stroke: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+/* Color for list item text in menu lists */
+/* line 181, src\css\shared-imports\mixins.less */
+.jw-option {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 184, src\css\shared-imports\mixins.less */
+.jw-option.jw-active-option {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* line 190, src\css\shared-imports\mixins.less */
+:not(.jw-flag-touch) .jw-option:hover {
+  color: #fff;
+}
+/* line 3, src\css\jwplayer\imports\jwplayerlayout.less */
+.jwplayer {
+  width: 100%;
+  font-size: 16px;
+  position: relative;
+  display: block;
+  min-height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* disallow text-select highlighting.  Safari specific feature */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+}
+/* line 17, src\css\jwplayer\imports\jwplayerlayout.less */
+.jwplayer * {
+  box-sizing: inherit;
+}
+/* line 23, src\css\jwplayer\imports\jwplayerlayout.less */
+.jwplayer.jw-tab-focus:focus {
+  outline: solid 2px #4d90fe;
+}
+/* line 28, src\css\jwplayer\imports\jwplayerlayout.less */
+.jwplayer.jw-flag-aspect-mode {
+  /* Height auto required for displaying aspect ratio correctly */
+  /* stylelint-disable-next-line declaration-no-important */
+  height: auto !important;
+}
+/* line 33, src\css\jwplayer\imports\jwplayerlayout.less */
+.jwplayer.jw-flag-aspect-mode .jw-aspect {
+  display: block;
+}
+/* line 38, src\css\jwplayer\imports\jwplayerlayout.less */
+.jwplayer .jw-aspect {
+  display: none;
+}
+/* line 43, src\css\jwplayer\imports\jwplayerlayout.less */
+.jw-media,
+.jw-preview {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* line 54, src\css\jwplayer\imports\jwplayerlayout.less */
+.jw-media {
+  overflow: hidden;
+  cursor: pointer;
+}
+/* line 59, src\css\jwplayer\imports\jwplayerlayout.less */
+.jw-plugin {
+  position: absolute;
+  bottom: 66px;
+}
+/* line 63, src\css\jwplayer\imports\jwplayerlayout.less */
+.jw-breakpoint-7 .jw-plugin {
+  bottom: 132px;
+}
+/* line 67, src\css\jwplayer\imports\jwplayerlayout.less */
+.jw-plugin .jw-banner {
+  max-width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  margin: auto auto 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+/* Allow pointer events through to the provider */
+/* line 81, src\css\jwplayer\imports\jwplayerlayout.less */
+.jw-preview,
+.jw-captions,
+.jw-title {
+  pointer-events: none;
+}
+/* These items can intercept pointer-events */
+/* line 88, src\css\jwplayer\imports\jwplayerlayout.less */
+.jw-media,
+.jw-logo {
+  pointer-events: all;
+}
+/* line 93, src\css\jwplayer\imports\jwplayerlayout.less */
+.jw-wrapper {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* Visually hidden element that is recognized by accessibility */
+/* line 103, src\css\jwplayer\imports\jwplayerlayout.less */
+.jw-hidden-accessibility {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 114, src\css\jwplayer\imports\jwplayerlayout.less */
+.jw-contract-trigger::before {
+  content: "";
+  overflow: hidden;
+  width: 200%;
+  height: 200%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 2, src\css\jwplayer\imports\video.less */
+.jwplayer .jw-media video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+/* line 17, src\css\jwplayer\imports\video.less */
+.jwplayer .jw-media video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+/* line 23, src\css\jwplayer\imports\video.less */
+.jwplayer.jw-stretch-uniform .jw-media video {
+  object-fit: contain;
+}
+/* line 29, src\css\jwplayer\imports\video.less */
+.jwplayer.jw-stretch-none .jw-media video {
+  object-fit: none;
+}
+/* line 35, src\css\jwplayer\imports\video.less */
+.jwplayer.jw-stretch-fill .jw-media video {
+  object-fit: cover;
+}
+/* line 41, src\css\jwplayer\imports\video.less */
+.jwplayer.jw-stretch-exactfit .jw-media video {
+  object-fit: fill;
+}
+/* line 4, src\css\jwplayer\imports\display.less */
+.jw-preview {
+  position: absolute;
+  display: none;
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  background: #000 no-repeat 50% 50%;
+}
+/* line 16, src\css\jwplayer\imports\display.less */
+.jwplayer .jw-preview,
+.jw-error .jw-preview {
+  background-size: contain;
+}
+/* line 22, src\css\jwplayer\imports\display.less */
+.jw-stretch-none .jw-preview {
+  background-size: auto auto;
+}
+/* line 28, src\css\jwplayer\imports\display.less */
+.jw-stretch-fill .jw-preview {
+  background-size: cover;
+}
+/* line 34, src\css\jwplayer\imports\display.less */
+.jw-stretch-exactfit .jw-preview {
+  background-size: 100% 100%;
+}
+/* line 1, src\css\jwplayer\imports\title.less */
+.jw-title {
+  display: none;
+  padding-top: 20px;
+  width: 100%;
+  z-index: 1;
+}
+/* line 10, src\css\jwplayer\imports\title.less */
+.jw-title-primary,
+.jw-title-secondary {
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: unset;
+  white-space: nowrap;
+  width: 100%;
+}
+/* line 24, src\css\jwplayer\imports\title.less */
+.jw-title-primary {
+  font-size: 1.625em;
+}
+/* line 27, src\css\jwplayer\imports\title.less */
+.jw-breakpoint-2 .jw-title-primary,
+.jw-breakpoint-3 .jw-title-primary {
+  font-size: 1.5em;
+}
+/* line 32, src\css\jwplayer\imports\title.less */
+.jw-flag-small-player .jw-title-primary {
+  font-size: 1.25em;
+}
+/* line 36, src\css\jwplayer\imports\title.less */
+.jw-breakpoint-0 .jw-ab-truncated .jw-title-primary,
+.jw-breakpoint-1 .jw-ab-truncated .jw-title-primary,
+.jw-breakpoint-2 .jw-ab-truncated .jw-title-primary {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-bottom: 0;
+  margin-bottom: 0.5em;
+  white-space: pre-wrap;
+  line-height: 1.2;
+}
+/* line 49, src\css\jwplayer\imports\title.less */
+.jw-breakpoint-1 .jw-ab-truncated .jw-title-primary {
+  font-size: 1.25em;
+}
+/* line 53, src\css\jwplayer\imports\title.less */
+.jw-breakpoint-0 .jw-ab-truncated .jw-title-primary {
+  font-size: 1em;
+}
+/* line 59, src\css\jwplayer\imports\title.less */
+.jw-flag-small-player .jw-title-secondary,
+.jw-breakpoint-0 .jw-ab-truncated .jw-title-secondary,
+.jw-breakpoint-1 .jw-ab-truncated .jw-title-secondary,
+.jw-breakpoint-2 .jw-ab-truncated .jw-title-secondary,
+.jw-title-secondary:empty {
+  display: none;
+}
+/* line 1, src\css\jwplayer\imports\captions.less */
+.jw-captions {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0;
+  text-decoration: none;
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+}
+/* line 16, src\css\jwplayer\imports\captions.less */
+.jw-captions.jw-captions-enabled {
+  display: block;
+}
+/* line 21, src\css\jwplayer\imports\captions.less */
+.jw-captions-window {
+  display: none;
+  padding: 0.25em;
+  border-radius: 0.25em;
+}
+/* line 26, src\css\jwplayer\imports\captions.less */
+.jw-captions-window.jw-captions-window-active {
+  display: inline-block;
+}
+/* line 31, src\css\jwplayer\imports\captions.less */
+.jw-captions-text {
+  display: inline-block;
+  color: #fff;
+  background-color: #000;
+  word-wrap: normal;
+  word-break: normal;
+  white-space: pre-line;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 44, src\css\jwplayer\imports\captions.less */
+.jw-text-track-display {
+  /* Override vtt.js font-size so text resizes as the player size changes */
+  font-size: inherit;
+  line-height: 1.5;
+}
+/* line 50, src\css\jwplayer\imports\captions.less */
+.jw-text-track-cue {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 0.1em 0.3em;
+}
+/* line 57, src\css\jwplayer\imports\captions.less */
+.jwplayer video {
+  /* Normalize the coordinate system to uniformly adjust the container height when the control bar is visible */
+  /* Ensure captions aren't cropped when the pseudo element's width cannot accommodate all the text */
+  /* Safari's media controls should not show when not in fullscreen on iOS devices */
+}
+/* line 59, src\css\jwplayer\imports\captions.less */
+.jwplayer video::-webkit-media-controls {
+  display: none;
+  justify-content: flex-start;
+}
+/* line 65, src\css\jwplayer\imports\captions.less */
+.jwplayer video::-webkit-media-text-track-display {
+  min-width: -webkit-min-content;
+}
+/* line 69, src\css\jwplayer\imports\captions.less */
+.jwplayer video::cue {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 74, src\css\jwplayer\imports\captions.less */
+.jwplayer video::-webkit-media-controls-panel-container {
+  display: none;
+}
+/* line 84, src\css\jwplayer\imports\captions.less */
+.jwplayer:not(.jw-flag-controls-hidden):not(.jw-state-playing) .jw-captions,
+.jwplayer.jw-flag-media-audio.jw-state-playing .jw-captions,
+.jwplayer.jw-state-playing:not(.jw-flag-user-inactive):not(.jw-flag-controls-hidden) .jw-captions {
+  max-height: calc(100% - 60px);
+}
+/* line 88, src\css\jwplayer\imports\captions.less */
+.jwplayer:not(.jw-flag-controls-hidden):not(.jw-state-playing):not(.jw-flag-ios-fullscreen) video::-webkit-media-text-track-container,
+.jwplayer.jw-flag-media-audio.jw-state-playing:not(.jw-flag-ios-fullscreen) video::-webkit-media-text-track-container,
+.jwplayer.jw-state-playing:not(.jw-flag-user-inactive):not(.jw-flag-controls-hidden):not(.jw-flag-ios-fullscreen) video::-webkit-media-text-track-container {
+  max-height: calc(100% - 60px);
+}
+/* line 3, src\css\jwplayer\imports\logo.less */
+.jw-logo {
+  position: absolute;
+  margin: 20px;
+  cursor: pointer;
+  pointer-events: all;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto;
+  outline: none;
+}
+/* line 19, src\css\jwplayer\imports\logo.less */
+.jw-logo.jw-tab-focus:focus {
+  outline: solid 2px #4d90fe;
+}
+/* line 24, src\css\jwplayer\imports\logo.less */
+.jw-flag-audio-player .jw-logo {
+  display: none;
+}
+/* line 28, src\css\jwplayer\imports\logo.less */
+.jw-logo-top-right {
+  top: 0;
+  right: 0;
+}
+/* line 33, src\css\jwplayer\imports\logo.less */
+.jw-logo-top-left {
+  top: 0;
+  left: 0;
+}
+/* line 38, src\css\jwplayer\imports\logo.less */
+.jw-logo-bottom-left {
+  left: 0;
+}
+/* line 42, src\css\jwplayer\imports\logo.less */
+.jw-logo-bottom-right {
+  right: 0;
+}
+/* line 46, src\css\jwplayer\imports\logo.less */
+.jw-logo-bottom-left,
+.jw-logo-bottom-right {
+  bottom: 44px;
+  transition: bottom 150ms cubic-bezier(0, 0.25, 0.25, 1);
+}
+/* line 52, src\css\jwplayer\imports\logo.less */
+.jw-state-idle .jw-logo {
+  z-index: 1;
+}
+/* line 5, src\css\jwplayer\states.less */
+.jw-state-setup .jw-wrapper {
+  background-color: inherit;
+}
+/* line 9, src\css\jwplayer\states.less */
+.jw-state-setup .jw-logo,
+.jw-state-setup .jw-controls,
+.jw-state-setup .jw-controls-backdrop {
+  visibility: hidden;
+}
+/* line 16, src\css\jwplayer\states.less */
+span.jw-break {
+  display: block;
+}
+/* line 21, src\css\jwplayer\states.less */
+body .jw-error,
+body .jwplayer.jw-state-error {
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  display: table;
+  opacity: 1;
+  position: relative;
+}
+/* line 31, src\css\jwplayer\states.less */
+body .jw-error .jw-display,
+body .jwplayer.jw-state-error .jw-display {
+  display: none;
+}
+/* line 35, src\css\jwplayer\states.less */
+body .jw-error .jw-media,
+body .jwplayer.jw-state-error .jw-media {
+  cursor: default;
+}
+/* line 39, src\css\jwplayer\states.less */
+body .jw-error .jw-preview,
+body .jwplayer.jw-state-error .jw-preview {
+  background-color: #333;
+}
+/* line 43, src\css\jwplayer\states.less */
+body .jw-error .jw-error-msg,
+body .jwplayer.jw-state-error .jw-error-msg {
+  background-color: #000;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 20px;
+}
+/* line 51, src\css\jwplayer\states.less */
+body .jw-error .jw-error-msg .jw-icon,
+body .jwplayer.jw-state-error .jw-error-msg .jw-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  flex: 0 0 auto;
+  align-self: center;
+}
+/* line 57, src\css\jwplayer\states.less */
+body .jw-error .jw-error-msg .jw-icon:empty,
+body .jwplayer.jw-state-error .jw-error-msg .jw-icon:empty {
+  display: none;
+}
+/* line 62, src\css\jwplayer\states.less */
+body .jw-error .jw-error-msg .jw-info-container,
+body .jwplayer.jw-state-error .jw-error-msg .jw-info-container {
+  margin: 0;
+  padding: 0;
+}
+/* line 71, src\css\jwplayer\states.less */
+body .jw-error:not(.jw-flag-audio-player).jw-flag-small-player .jw-error-msg,
+body .jwplayer.jw-state-error:not(.jw-flag-audio-player).jw-flag-small-player .jw-error-msg,
+body .jw-error:not(.jw-flag-audio-player).jw-breakpoint-2 .jw-error-msg,
+body .jwplayer.jw-state-error:not(.jw-flag-audio-player).jw-breakpoint-2 .jw-error-msg {
+  flex-direction: column;
+}
+/* line 74, src\css\jwplayer\states.less */
+body .jw-error:not(.jw-flag-audio-player).jw-flag-small-player .jw-error-msg .jw-error-text,
+body .jwplayer.jw-state-error:not(.jw-flag-audio-player).jw-flag-small-player .jw-error-msg .jw-error-text,
+body .jw-error:not(.jw-flag-audio-player).jw-breakpoint-2 .jw-error-msg .jw-error-text,
+body .jwplayer.jw-state-error:not(.jw-flag-audio-player).jw-breakpoint-2 .jw-error-msg .jw-error-text {
+  text-align: center;
+}
+/* line 78, src\css\jwplayer\states.less */
+body .jw-error:not(.jw-flag-audio-player).jw-flag-small-player .jw-error-msg .jw-icon,
+body .jwplayer.jw-state-error:not(.jw-flag-audio-player).jw-flag-small-player .jw-error-msg .jw-icon,
+body .jw-error:not(.jw-flag-audio-player).jw-breakpoint-2 .jw-error-msg .jw-icon,
+body .jwplayer.jw-state-error:not(.jw-flag-audio-player).jw-breakpoint-2 .jw-error-msg .jw-icon {
+  flex: 0.5 0 auto;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+/* line 93, src\css\jwplayer\states.less */
+.jwplayer.jw-state-error.jw-flag-audio-player .jw-error-msg .jw-break,
+.jwplayer.jw-state-error.jw-flag-small-player .jw-error-msg .jw-break,
+.jwplayer.jw-state-error.jw-breakpoint-2 .jw-error-msg .jw-break {
+  display: inline;
+}
+/* line 96, src\css\jwplayer\states.less */
+.jwplayer.jw-state-error.jw-flag-audio-player .jw-error-msg .jw-break:before,
+.jwplayer.jw-state-error.jw-flag-small-player .jw-error-msg .jw-break:before,
+.jwplayer.jw-state-error.jw-breakpoint-2 .jw-error-msg .jw-break:before {
+  content: " ";
+}
+/* line 105, src\css\jwplayer\states.less */
+.jwplayer.jw-state-error.jw-flag-audio-player .jw-error-msg {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+  background: #000;
+  -webkit-transform: none;
+          transform: none;
+  padding: 4px 16px;
+  z-index: 1;
+}
+/* line 113, src\css\jwplayer\states.less */
+.jwplayer.jw-state-error.jw-flag-audio-player .jw-error-msg.jw-info-overlay {
+  max-width: none;
+  max-height: none;
+}
+/* line 125, src\css\jwplayer\states.less */
+body .jwplayer.jw-state-error .jw-title,
+.jw-state-idle .jw-title,
+.jwplayer.jw-state-complete:not(.jw-flag-casting):not(.jw-flag-audio-player):not(.jw-flag-overlay-open-related) .jw-title {
+  display: block;
+}
+/* line 129, src\css\jwplayer\states.less */
+body .jwplayer.jw-state-error .jw-preview,
+.jw-state-idle .jw-preview,
+.jwplayer.jw-state-complete:not(.jw-flag-casting):not(.jw-flag-audio-player):not(.jw-flag-overlay-open-related) .jw-preview {
+  display: block;
+}
+/* line 135, src\css\jwplayer\states.less */
+.jw-state-idle,
+.jwplayer.jw-state-complete,
+body .jwplayer.jw-state-error {
+  /* captions styles code specific to native text track rendering */
+}
+/* line 138, src\css\jwplayer\states.less */
+.jw-state-idle .jw-captions,
+.jwplayer.jw-state-complete .jw-captions,
+body .jwplayer.jw-state-error .jw-captions {
+  display: none;
+}
+/* line 143, src\css\jwplayer\states.less */
+.jw-state-idle video::-webkit-media-text-track-container,
+.jwplayer.jw-state-complete video::-webkit-media-text-track-container,
+body .jwplayer.jw-state-error video::-webkit-media-text-track-container {
+  display: none;
+}
+/* line 1, src\css\jwplayer\flags\fullscreen.less */
+.jwplayer.jw-flag-fullscreen {
+  /* !important required to ensure that fullscreen state is respected */
+  /* stylelint-disable declaration-no-important */
+  width: 100% !important;
+  height: 100% !important;
+  /* stylelint-enable declaration-no-important */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  margin: 0;
+  position: fixed;
+}
+/* line 2, src\css\jwplayer\flags\controls-hidden.less */
+.jwplayer.jw-flag-controls-hidden .jw-media {
+  cursor: default;
+}
+/* line 2, src\css\jwplayer\flags\audioplayer.less */
+.jw-flag-audio-player .jw-media {
+  visibility: hidden;
+}
+/* line 6, src\css\jwplayer\flags\audioplayer.less */
+.jw-flag-audio-player .jw-title {
+  background: none;
+}
+/* line 3, src\css\jwplayer\flags\floatingplayer.less */
+.jw-flag-floating {
+  background-size: cover;
+  background-color: #000;
+}
+/* line 7, src\css\jwplayer\flags\floatingplayer.less */
+.jw-flag-floating .jw-wrapper {
+  position: fixed;
+  z-index: 2147483647;
+  top: auto;
+  bottom: 1rem;
+  left: auto;
+  right: 1rem;
+  max-width: 400px;
+  max-height: 400px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 481px) {
+  /* line 20, src\css\jwplayer\flags\floatingplayer.less */
+  .jw-flag-floating .jw-wrapper:not(.jw-floating-dragged) {
+    -webkit-animation: jw-float-to-bottom 150ms cubic-bezier(0, 0.25, 0.25, 1) forwards 1;
+            animation: jw-float-to-bottom 150ms cubic-bezier(0, 0.25, 0.25, 1) forwards 1;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 24, src\css\jwplayer\flags\floatingplayer.less */
+  .jw-flag-floating .jw-wrapper {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}
+/* line 30, src\css\jwplayer\flags\floatingplayer.less */
+.jw-flag-floating .jw-wrapper.jw-floating-dragging {
+  /* stylelint-disable-next-line */
+  transition: none!important;
+}
+/* line 35, src\css\jwplayer\flags\floatingplayer.less */
+.jw-flag-floating .jw-wrapper .jw-media {
+  touch-action: none;
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  /* line 40, src\css\jwplayer\flags\floatingplayer.less */
+  .jw-flag-touch.jw-flag-floating .jw-wrapper {
+    -webkit-animation: none;
+            animation: none;
+    top: 0;
+    margin-top: 62px;
+    bottom: auto;
+    max-width: none;
+    max-height: none;
+  }
+}
+/* line 51, src\css\jwplayer\flags\floatingplayer.less */
+.jw-flag-floating .jw-float-icon {
+  pointer-events: all;
+  cursor: pointer;
+  display: none;
+}
+/* line 56, src\css\jwplayer\flags\floatingplayer.less */
+.jw-flag-floating .jw-float-icon .jw-svg-icon {
+  -webkit-filter: drop-shadow(0 0 1px #000);
+          filter: drop-shadow(0 0 1px #000);
+}
+/* line 61, src\css\jwplayer\flags\floatingplayer.less */
+.jw-flag-floating.jw-floating-dismissible .jw-dismiss-icon {
+  display: none;
+}
+/* line 67, src\css\jwplayer\flags\floatingplayer.less */
+.jw-flag-floating.jw-floating-dismissible.jw-flag-ads .jw-float-icon {
+  display: flex;
+}
+/* line 73, src\css\jwplayer\flags\floatingplayer.less */
+.jw-flag-floating.jw-floating-dismissible.jw-state-paused .jw-logo,
+.jw-flag-floating.jw-floating-dismissible:not(.jw-flag-user-inactive) .jw-logo {
+  display: none;
+}
+/* line 77, src\css\jwplayer\flags\floatingplayer.less */
+.jw-flag-floating.jw-floating-dismissible.jw-state-paused .jw-float-icon,
+.jw-flag-floating.jw-floating-dismissible:not(.jw-flag-user-inactive) .jw-float-icon {
+  display: flex;
+}
+/* line 83, src\css\jwplayer\flags\floatingplayer.less */
+.jw-float-icon {
+  display: none;
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  align-items: center;
+  justify-content: center;
+}
+@-webkit-keyframes jw-float-to-bottom {
+  /* line 93, src\css\jwplayer\flags\floatingplayer.less */
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  /* line 97, src\css\jwplayer\flags\floatingplayer.less */
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes jw-float-to-bottom {
+  /* line 93, src\css\jwplayer\flags\floatingplayer.less */
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  /* line 97, src\css\jwplayer\flags\floatingplayer.less */
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/* line 1, src\css\jwplayer\flags\top.less */
+.jw-flag-top {
+  margin-top: 2em;
+  overflow: visible;
+}
+/* line 6, src\css\jwplayer\flags\top.less */
+.jw-top {
+  height: 2em;
+  line-height: 2;
+  pointer-events: none;
+  text-align: center;
+  opacity: 0.8;
+  position: absolute;
+  top: -2em;
+  width: 100%;
+}
+/* line 17, src\css\jwplayer\flags\top.less */
+.jw-top .jw-icon {
+  cursor: pointer;
+  pointer-events: all;
+  height: auto;
+  width: auto;
+}
+/* line 24, src\css\jwplayer\flags\top.less */
+.jw-top .jw-text {
+  color: #555;
+}

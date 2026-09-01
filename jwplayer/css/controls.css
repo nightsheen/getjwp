@@ -1,0 +1,2890 @@
+/* line 13, src\css\shared-imports\mixins\rect.less */
+.jw-overlays,
+.jw-controls,
+.jw-controls-backdrop,
+.jw-flag-small-player .jw-settings-menu,
+.jw-settings-submenu {
+  height: 100%;width: 100%;
+}
+/* line 24, src\css\shared-imports\mixins\position.less */
+.jw-settings-menu .jw-icon::after,
+.jw-icon-settings::after,
+.jw-icon-volume::after,
+.jw-settings-menu .jw-icon.jw-button-color::after {
+  position: absolute;right: 0;
+}
+/* line 57, src\css\shared-imports\mixins\position.less */
+.jw-overlays,
+.jw-controls,
+.jw-controls-backdrop,
+.jw-settings-item-active::before {
+  top: 0;position: absolute;left: 0;
+}
+/* line 68, src\css\shared-imports\mixins\position.less */
+.jw-settings-menu .jw-icon::after,
+.jw-icon-settings::after,
+.jw-icon-volume::after,
+.jw-settings-menu .jw-icon.jw-button-color::after {
+  position: absolute;bottom: 0;left: 0;
+}
+/* line 79, src\css\shared-imports\mixins\position.less */
+.jw-nextup-close {
+  position: absolute;top: 0;right: 0;
+}
+/* line 90, src\css\shared-imports\mixins\position.less */
+.jw-overlays,
+.jw-controls,
+.jw-flag-small-player .jw-settings-menu {
+  position: absolute;bottom: 0;right: 0;
+}
+/* line 8, src\css\shared-imports\mixins\pseudo.less */
+.jw-settings-menu .jw-icon::after,
+.jw-icon-settings::after,
+.jw-icon-volume::after,
+.jw-time-tip::after,
+.jw-settings-menu .jw-icon.jw-button-color::after,
+.jw-text-live::before,
+.jw-controlbar .jw-tooltip::after,
+.jw-settings-menu .jw-tooltip::after {
+  content: "";display: block;
+}
+/* Less requires namespaced variables/mixins to overwrite globals - https://github.com/less/less.js/issues/1316 */
+/* Mixin for common skin styles with variable colors */
+/* stylelint-disable selector-max-id */
+/* stylelint-enable selector-max-id */
+/* line 1, src\css\controls\imports\icons.less */
+.jw-svg-icon {
+  height: 24px;
+  width: 24px;
+  fill: currentColor;
+  pointer-events: none;
+}
+/* line 7, src\css\controls\imports\icons.less */
+.jw-icon {
+  height: 44px;
+  width: 44px;
+  background-color: transparent;
+  outline: none;
+}
+/* line 13, src\css\controls\imports\icons.less */
+.jw-icon.jw-tab-focus:focus {
+  border: solid 2px #4d90fe;
+}
+/* line 18, src\css\controls\imports\icons.less */
+.jw-icon-airplay .jw-svg-icon-airplay-off {
+  display: none;
+}
+/* line 21, src\css\controls\imports\icons.less */
+.jw-off.jw-icon-airplay .jw-svg-icon-airplay-off {
+  display: block;
+}
+/* line 26, src\css\controls\imports\icons.less */
+.jw-icon-airplay .jw-svg-icon-airplay-on {
+  display: block;
+}
+/* line 29, src\css\controls\imports\icons.less */
+.jw-off.jw-icon-airplay .jw-svg-icon-airplay-on {
+  display: none;
+}
+/* line 36, src\css\controls\imports\icons.less */
+.jw-icon-cc .jw-svg-icon-cc-off {
+  display: none;
+}
+/* line 39, src\css\controls\imports\icons.less */
+.jw-off.jw-icon-cc .jw-svg-icon-cc-off {
+  display: block;
+}
+/* line 44, src\css\controls\imports\icons.less */
+.jw-icon-cc .jw-svg-icon-cc-on {
+  display: block;
+}
+/* line 47, src\css\controls\imports\icons.less */
+.jw-off.jw-icon-cc .jw-svg-icon-cc-on {
+  display: none;
+}
+/* line 54, src\css\controls\imports\icons.less */
+.jw-icon-fullscreen .jw-svg-icon-fullscreen-off {
+  display: none;
+}
+/* line 57, src\css\controls\imports\icons.less */
+.jw-off.jw-icon-fullscreen .jw-svg-icon-fullscreen-off {
+  display: block;
+}
+/* line 62, src\css\controls\imports\icons.less */
+.jw-icon-fullscreen .jw-svg-icon-fullscreen-on {
+  display: block;
+}
+/* line 65, src\css\controls\imports\icons.less */
+.jw-off.jw-icon-fullscreen .jw-svg-icon-fullscreen-on {
+  display: none;
+}
+/* line 72, src\css\controls\imports\icons.less */
+.jw-icon-pip .jw-svg-icon-pip-off {
+  display: none;
+}
+/* line 75, src\css\controls\imports\icons.less */
+.jw-off.jw-icon-pip .jw-svg-icon-pip-off {
+  display: block;
+}
+/* line 80, src\css\controls\imports\icons.less */
+.jw-icon-pip .jw-svg-icon-pip-on {
+  display: block;
+}
+/* line 83, src\css\controls\imports\icons.less */
+.jw-off.jw-icon-pip .jw-svg-icon-pip-on {
+  display: none;
+}
+/* line 90, src\css\controls\imports\icons.less */
+.jw-icon-volume .jw-svg-icon-volume-0 {
+  display: none;
+}
+/* line 93, src\css\controls\imports\icons.less */
+.jw-off.jw-icon-volume .jw-svg-icon-volume-0 {
+  display: block;
+}
+/* line 98, src\css\controls\imports\icons.less */
+.jw-icon-volume .jw-svg-icon-volume-100 {
+  display: none;
+}
+/* line 101, src\css\controls\imports\icons.less */
+.jw-full.jw-icon-volume .jw-svg-icon-volume-100 {
+  display: block;
+}
+/* line 106, src\css\controls\imports\icons.less */
+.jw-icon-volume .jw-svg-icon-volume-50 {
+  display: block;
+}
+/* line 109, src\css\controls\imports\icons.less */
+.jw-off.jw-icon-volume .jw-svg-icon-volume-50,
+.jw-full.jw-icon-volume .jw-svg-icon-volume-50 {
+  display: none;
+}
+/* line 119, src\css\controls\imports\icons.less */
+.jw-settings-menu .jw-icon::after,
+.jw-icon-settings::after,
+.jw-icon-volume::after {
+  height: 100%;
+  width: 24px;
+  box-shadow: inset 0 -3px 0 -1px currentColor;
+  margin: auto;
+  opacity: 0;
+  transition: opacity 150ms cubic-bezier(0, 0.25, 0.25, 1);
+}
+/* line 134, src\css\controls\imports\icons.less */
+.jw-settings-menu .jw-icon[aria-checked="true"]::after,
+.jw-settings-open .jw-icon-settings::after,
+.jw-icon-volume.jw-open::after {
+  opacity: 1;
+}
+/* line 140, src\css\controls\imports\icons.less */
+.jwplayer.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-icon-cc,
+.jwplayer.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-icon-settings,
+.jwplayer.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-icon-audio-tracks,
+.jwplayer.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-icon-hd,
+.jwplayer.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-settings-sharing,
+.jwplayer.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-icon-fullscreen,
+.jwplayer.jw-breakpoint--1:not(.jw-flag-audio-player).jw-flag-cast-available .jw-icon-airplay,
+.jwplayer.jw-breakpoint--1:not(.jw-flag-audio-player).jw-flag-cast-available .jw-icon-cast {
+  display: none;
+}
+/* line 151, src\css\controls\imports\icons.less */
+.jwplayer.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-icon-volume,
+.jwplayer.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-text-live {
+  bottom: 6px;
+}
+/* line 156, src\css\controls\imports\icons.less */
+.jwplayer.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-icon-volume::after {
+  display: none;
+}
+/* line 4, src\css\controls\imports\jwplayerlayout.less */
+.jw-overlays,
+.jw-controls {
+  pointer-events: none;
+}
+/* line 10, src\css\controls\imports\jwplayerlayout.less */
+.jw-controls-backdrop {
+  display: block;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4) 77%, rgba(0, 0, 0, 0.4) 100%) 100% 100% / 100% 240px no-repeat transparent;
+  transition: opacity 250ms cubic-bezier(0, 0.25, 0.25, 1), background-size 250ms cubic-bezier(0, 0.25, 0.25, 1);
+  pointer-events: none;
+}
+/* line 18, src\css\controls\imports\jwplayerlayout.less */
+.jw-overlays {
+  cursor: auto;
+}
+/* line 22, src\css\controls\imports\jwplayerlayout.less */
+.jw-controls {
+  overflow: hidden;
+}
+/* line 25, src\css\controls\imports\jwplayerlayout.less */
+.jw-flag-small-player .jw-controls {
+  text-align: center;
+}
+/* line 30, src\css\controls\imports\jwplayerlayout.less */
+.jw-text {
+  height: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  font-variant: normal;
+  font-stretch: normal;
+}
+/* These items can intercept pointer-events */
+/* line 43, src\css\controls\imports\jwplayerlayout.less */
+.jw-controlbar,
+.jw-skip,
+.jw-display-icon-container .jw-icon,
+.jw-nextup-container,
+.jw-autostart-mute,
+.jw-overlays .jw-plugin {
+  pointer-events: all;
+}
+/* line 5, src\css\controls\imports\display.less */
+.jwplayer .jw-display-icon-container,
+.jw-error .jw-display-icon-container {
+  /* Enforce auto container sizing to prevent custom skin errors in 7.9 */
+  width: auto;
+  height: auto;
+  /* Prevent border styles from impacting width and height */
+  box-sizing: content-box;
+}
+/*
+display icons
+*/
+/* line 18, src\css\controls\imports\display.less */
+.jw-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 57px 0;
+  position: relative;
+  width: 100%;
+}
+/* line 27, src\css\controls\imports\display.less */
+.jw-flag-dragging .jw-display {
+  display: none;
+}
+/* line 31, src\css\controls\imports\display.less */
+.jw-state-idle:not(.jw-flag-cast-available) .jw-display {
+  padding: 0;
+}
+/* line 36, src\css\controls\imports\display.less */
+.jw-display-container {
+  text-align: center;
+}
+/* line 40, src\css\controls\imports\display.less */
+.jw-display-controls {
+  display: inline-block;
+}
+/* line 44, src\css\controls\imports\display.less */
+.jwplayer .jw-display-icon-container {
+  float: left;
+}
+/* line 49, src\css\controls\imports\display.less */
+.jw-display-icon-container {
+  display: inline-block;
+  padding: 5.5px;
+  margin: 0 22px;
+}
+/* line 54, src\css\controls\imports\display.less */
+.jw-display-icon-container .jw-icon {
+  height: 75px;
+  width: 75px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 61, src\css\controls\imports\display.less */
+.jw-display-icon-container .jw-icon .jw-svg-icon {
+  height: 33px;
+  width: 33px;
+  padding: 0;
+  position: relative;
+}
+/* line 67, src\css\controls\imports\display.less */
+.jw-display-icon-container .jw-icon .jw-svg-icon-rewind {
+  padding: 0.2em 0.05em;
+}
+/* line 73, src\css\controls\imports\display.less */
+.jw-breakpoint--1 .jw-nextup-container {
+  display: none;
+}
+/* line 80, src\css\controls\imports\display.less */
+.jw-breakpoint-0 .jw-display-icon-next,
+.jw-breakpoint--1 .jw-display-icon-next,
+.jw-breakpoint-0 .jw-display-icon-rewind,
+.jw-breakpoint--1 .jw-display-icon-rewind {
+  display: none;
+}
+/* line 85, src\css\controls\imports\display.less */
+.jw-breakpoint-0.jw-flag-touch .jw-display .jw-icon,
+.jw-breakpoint--1.jw-flag-touch .jw-display .jw-icon,
+.jw-breakpoint-0.jw-flag-touch .jw-display .jw-svg-icon,
+.jw-breakpoint--1.jw-flag-touch .jw-display .jw-svg-icon {
+  z-index: 100;
+  position: relative;
+}
+/* line 91, src\css\controls\imports\display.less */
+.jw-breakpoint-0 .jw-display .jw-icon,
+.jw-breakpoint--1 .jw-display .jw-icon,
+.jw-breakpoint-0 .jw-display .jw-svg-icon,
+.jw-breakpoint--1 .jw-display .jw-svg-icon {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+}
+/* line 97, src\css\controls\imports\display.less */
+.jw-breakpoint-0 .jw-display .jw-icon:before,
+.jw-breakpoint--1 .jw-display .jw-icon:before,
+.jw-breakpoint-0 .jw-display .jw-svg-icon:before,
+.jw-breakpoint--1 .jw-display .jw-svg-icon:before {
+  width: 22px;
+  height: 22px;
+}
+/* line 105, src\css\controls\imports\display.less */
+.jw-breakpoint-1 .jw-display .jw-icon,
+.jw-breakpoint-1 .jw-display .jw-svg-icon {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+}
+/* line 111, src\css\controls\imports\display.less */
+.jw-breakpoint-1 .jw-display .jw-icon:before,
+.jw-breakpoint-1 .jw-display .jw-svg-icon:before {
+  width: 22px;
+  height: 22px;
+}
+/* line 118, src\css\controls\imports\display.less */
+.jw-breakpoint-1 .jw-display .jw-icon.jw-icon-rewind:before {
+  width: 33px;
+  height: 33px;
+}
+/* line 127, src\css\controls\imports\display.less */
+.jw-breakpoint-2 .jw-display .jw-icon,
+.jw-breakpoint-3 .jw-display .jw-icon,
+.jw-breakpoint-2 .jw-display .jw-svg-icon,
+.jw-breakpoint-3 .jw-display .jw-svg-icon {
+  width: 77px;
+  height: 77px;
+  line-height: 77px;
+}
+/* line 133, src\css\controls\imports\display.less */
+.jw-breakpoint-2 .jw-display .jw-icon:before,
+.jw-breakpoint-3 .jw-display .jw-icon:before,
+.jw-breakpoint-2 .jw-display .jw-svg-icon:before,
+.jw-breakpoint-3 .jw-display .jw-svg-icon:before {
+  width: 38.5px;
+  height: 38.5px;
+}
+/* line 144, src\css\controls\imports\display.less */
+.jw-breakpoint-4 .jw-display .jw-icon,
+.jw-breakpoint-5 .jw-display .jw-icon,
+.jw-breakpoint-6 .jw-display .jw-icon,
+.jw-breakpoint-7 .jw-display .jw-icon,
+.jw-breakpoint-4 .jw-display .jw-svg-icon,
+.jw-breakpoint-5 .jw-display .jw-svg-icon,
+.jw-breakpoint-6 .jw-display .jw-svg-icon,
+.jw-breakpoint-7 .jw-display .jw-svg-icon {
+  width: 88px;
+  height: 88px;
+  line-height: 88px;
+}
+/* line 150, src\css\controls\imports\display.less */
+.jw-breakpoint-4 .jw-display .jw-icon:before,
+.jw-breakpoint-5 .jw-display .jw-icon:before,
+.jw-breakpoint-6 .jw-display .jw-icon:before,
+.jw-breakpoint-7 .jw-display .jw-icon:before,
+.jw-breakpoint-4 .jw-display .jw-svg-icon:before,
+.jw-breakpoint-5 .jw-display .jw-svg-icon:before,
+.jw-breakpoint-6 .jw-display .jw-svg-icon:before,
+.jw-breakpoint-7 .jw-display .jw-svg-icon:before {
+  width: 44px;
+  height: 44px;
+}
+/* line 4, src\css\controls\imports\controlbar.less */
+.jw-controlbar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background-size: auto;
+  box-shadow: none;
+  max-height: 72px;
+  transition: 250ms cubic-bezier(0, 0.25, 0.25, 1);
+  transition-property: opacity, visibility;
+  transition-delay: 0s;
+}
+/* line 23, src\css\controls\imports\controlbar.less */
+.jw-flag-touch.jw-breakpoint-0 .jw-controlbar .jw-icon-inline {
+  height: 40px;
+}
+/* line 28, src\css\controls\imports\controlbar.less */
+.jw-breakpoint-7 .jw-controlbar {
+  max-height: 140px;
+}
+/* line 31, src\css\controls\imports\controlbar.less */
+.jw-breakpoint-7 .jw-controlbar .jw-button-container {
+  padding: 0 48px 20px;
+}
+/* line 34, src\css\controls\imports\controlbar.less */
+.jw-breakpoint-7 .jw-controlbar .jw-button-container .jw-tooltip {
+  margin-bottom: -7px;
+}
+/* line 39, src\css\controls\imports\controlbar.less */
+.jw-breakpoint-7 .jw-controlbar .jw-button-container .jw-icon-volume .jw-overlay {
+  padding-bottom: 40%;
+}
+/* line 44, src\css\controls\imports\controlbar.less */
+.jw-breakpoint-7 .jw-controlbar .jw-button-container .jw-text {
+  font-size: 1em;
+}
+/* line 47, src\css\controls\imports\controlbar.less */
+.jw-breakpoint-7 .jw-controlbar .jw-button-container .jw-text.jw-text-elapsed {
+  justify-content: flex-end;
+}
+/* line 52, src\css\controls\imports\controlbar.less */
+.jw-breakpoint-7 .jw-controlbar .jw-button-container .jw-icon-inline:not(.jw-text-live),
+.jw-breakpoint-7 .jw-controlbar .jw-button-container .jw-icon-volume {
+  height: 60px;
+  width: 60px;
+}
+/* line 56, src\css\controls\imports\controlbar.less */
+.jw-breakpoint-7 .jw-controlbar .jw-button-container .jw-icon-inline:not(.jw-text-live) .jw-svg-icon,
+.jw-breakpoint-7 .jw-controlbar .jw-button-container .jw-icon-volume .jw-svg-icon {
+  height: 30px;
+  width: 30px;
+}
+/* line 62, src\css\controls\imports\controlbar.less */
+.jw-breakpoint-7 .jw-controlbar .jw-slider-time {
+  padding: 0 60px;
+  height: 34px;
+}
+/* line 66, src\css\controls\imports\controlbar.less */
+.jw-breakpoint-7 .jw-controlbar .jw-slider-time .jw-slider-container {
+  height: 10px;
+}
+/* line 72, src\css\controls\imports\controlbar.less */
+.jw-controlbar .jw-button-image {
+  background: no-repeat 50% 50%;
+  background-size: contain;
+  max-height: 24px;
+}
+/* line 78, src\css\controls\imports\controlbar.less */
+.jw-controlbar .jw-spacer {
+  margin: 0 auto;
+}
+/* line 83, src\css\controls\imports\controlbar.less */
+.jw-controlbar .jw-icon.jw-button-color:hover {
+  color: #fff;
+}
+/* line 89, src\css\controls\imports\controlbar.less */
+.jw-button-container {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 12px;
+}
+/* line 101, src\css\controls\imports\controlbar.less */
+.jw-slider-horizontal {
+  background-color: transparent;
+}
+/* line 105, src\css\controls\imports\controlbar.less */
+.jw-icon-inline {
+  position: relative;
+}
+/* line 109, src\css\controls\imports\controlbar.less */
+.jw-icon-inline,
+.jw-icon-tooltip {
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/* line 117, src\css\controls\imports\controlbar.less */
+.jw-icon-inline:not(.jw-text),
+.jw-icon-tooltip,
+.jw-slider-horizontal {
+  cursor: pointer;
+}
+/* line 123, src\css\controls\imports\controlbar.less */
+.jw-text-elapsed,
+.jw-text-duration {
+  justify-content: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+/* line 129, src\css\controls\imports\controlbar.less */
+.jw-icon-tooltip {
+  position: relative;
+}
+/* line 138, src\css\controls\imports\controlbar.less */
+.jw-knob:hover,
+.jw-icon-inline:hover,
+.jw-icon-tooltip:hover,
+.jw-icon-display:hover,
+.jw-option:before:hover {
+  color: #fff;
+}
+/* line 143, src\css\controls\imports\controlbar.less */
+.jw-time-tip,
+.jw-controlbar .jw-tooltip,
+.jw-settings-menu .jw-tooltip {
+  pointer-events: none;
+}
+/* line 147, src\css\controls\imports\controlbar.less */
+.jw-icon-cast {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 152, src\css\controls\imports\controlbar.less */
+.jw-icon-cast google-cast-launcher {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+/* line 162, src\css\controls\imports\controlbar.less */
+.jw-fullscreen-ima {
+  display: none;
+}
+/* line 166, src\css\controls\imports\controlbar.less */
+.jw-icon-inline.jw-icon-volume {
+  display: none;
+}
+/* line 170, src\css\controls\imports\controlbar.less */
+.jwplayer .jw-text-countdown {
+  display: none;
+}
+/* line 175, src\css\controls\imports\controlbar.less */
+.jw-flag-small-player .jw-display {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 184, src\css\controls\imports\controlbar.less */
+.jw-flag-small-player:not(.jw-flag-audio-player):not(.jw-flag-ads) .jw-controlbar .jw-button-container > .jw-icon-rewind,
+.jw-flag-small-player:not(.jw-flag-audio-player):not(.jw-flag-ads) .jw-controlbar .jw-button-container > .jw-icon-next,
+.jw-flag-small-player:not(.jw-flag-audio-player):not(.jw-flag-ads) .jw-controlbar .jw-button-container > .jw-icon-playback {
+  display: none;
+}
+/* line 197, src\css\controls\imports\controlbar.less */
+.jw-flag-ads-vpaid:not(.jw-flag-media-audio):not(.jw-flag-audio-player):not(.jw-flag-ads-vpaid-controls):not(.jw-flag-casting) .jw-controlbar,
+.jw-flag-user-inactive.jw-state-playing:not(.jw-flag-media-audio):not(.jw-flag-audio-player):not(.jw-flag-ads-vpaid-controls):not(.jw-flag-casting) .jw-controlbar,
+.jw-flag-user-inactive.jw-state-buffering:not(.jw-flag-media-audio):not(.jw-flag-audio-player):not(.jw-flag-ads-vpaid-controls):not(.jw-flag-casting) .jw-controlbar {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition-delay: 0s, 250ms;
+}
+/* line 204, src\css\controls\imports\controlbar.less */
+.jw-flag-ads-vpaid:not(.jw-flag-media-audio):not(.jw-flag-audio-player):not(.jw-flag-ads-vpaid-controls):not(.jw-flag-casting) .jw-controls-backdrop,
+.jw-flag-user-inactive.jw-state-playing:not(.jw-flag-media-audio):not(.jw-flag-audio-player):not(.jw-flag-ads-vpaid-controls):not(.jw-flag-casting) .jw-controls-backdrop,
+.jw-flag-user-inactive.jw-state-buffering:not(.jw-flag-media-audio):not(.jw-flag-audio-player):not(.jw-flag-ads-vpaid-controls):not(.jw-flag-casting) .jw-controls-backdrop {
+  opacity: 0;
+}
+/* line 212, src\css\controls\imports\controlbar.less */
+.jwplayer:not(.jw-flag-ads):not(.jw-flag-live).jw-breakpoint-0 .jw-text-countdown {
+  display: flex;
+}
+/* line 219, src\css\controls\imports\controlbar.less */
+.jwplayer:not(.jw-flag-ads):not(.jw-flag-live).jw-breakpoint--1 .jw-text-elapsed,
+.jwplayer:not(.jw-flag-ads):not(.jw-flag-live).jw-breakpoint-0 .jw-text-elapsed,
+.jwplayer:not(.jw-flag-ads):not(.jw-flag-live).jw-breakpoint--1 .jw-text-duration,
+.jwplayer:not(.jw-flag-ads):not(.jw-flag-live).jw-breakpoint-0 .jw-text-duration {
+  display: none;
+}
+/* line 227, src\css\controls\imports\controlbar.less */
+.jwplayer.jw-breakpoint--1:not(.jw-flag-ads):not(.jw-flag-audio-player) .jw-text-countdown,
+.jwplayer.jw-breakpoint--1:not(.jw-flag-ads):not(.jw-flag-audio-player) .jw-related-btn,
+.jwplayer.jw-breakpoint--1:not(.jw-flag-ads):not(.jw-flag-audio-player) .jw-slider-volume {
+  display: none;
+}
+/* line 233, src\css\controls\imports\controlbar.less */
+.jwplayer.jw-breakpoint--1:not(.jw-flag-ads):not(.jw-flag-audio-player) .jw-controlbar {
+  flex-direction: column-reverse;
+}
+/* line 237, src\css\controls\imports\controlbar.less */
+.jwplayer.jw-breakpoint--1:not(.jw-flag-ads):not(.jw-flag-audio-player) .jw-button-container {
+  height: 30px;
+}
+/* line 243, src\css\controls\imports\controlbar.less */
+.jw-breakpoint--1.jw-flag-ads:not(.jw-flag-audio-player) .jw-icon-volume,
+.jw-breakpoint--1.jw-flag-ads:not(.jw-flag-audio-player) .jw-icon-fullscreen {
+  display: none;
+}
+/* line 252, src\css\controls\imports\controlbar.less */
+.jwplayer:not(.jw-breakpoint-0) .jw-text-duration:before,
+.jwplayer:not(.jw-breakpoint--1) .jw-text-duration:before {
+  content: "/";
+  padding-right: 1ch;
+  padding-left: 1ch;
+}
+/* line 261, src\css\controls\imports\controlbar.less */
+.jwplayer:not(.jw-flag-user-inactive) .jw-controlbar {
+  will-change: transform;
+}
+/* line 264, src\css\controls\imports\controlbar.less */
+.jwplayer:not(.jw-flag-user-inactive) .jw-controlbar .jw-text {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+/* line 271, src\css\controls\imports\controlbar.less */
+.jwplayer:not(.jw-flag-fullscreen) .jw-fullscreen-disallowed {
+  display: none;
+}
+/* line 3, src\css\controls\imports\slider.less */
+.jw-slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  touch-action: none;
+}
+/* line 10, src\css\controls\imports\slider.less */
+.jw-rail,
+.jw-buffer,
+.jw-progress {
+  position: absolute;
+  cursor: pointer;
+}
+/* line 17, src\css\controls\imports\slider.less */
+.jw-progress {
+  background-color: #f2f2f2;
+}
+/* line 21, src\css\controls\imports\slider.less */
+.jw-rail {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* line 25, src\css\controls\imports\slider.less */
+.jw-buffer {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* line 29, src\css\controls\imports\slider.less */
+.jw-knob {
+  height: 13px;
+  width: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  transition: 150ms cubic-bezier(0, 0.25, 0.25, 1);
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+}
+/* line 41, src\css\controls\imports\slider.less */
+.jw-flag-dragging .jw-slider-time .jw-knob,
+.jw-icon-volume:active .jw-slider-volume .jw-knob {
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.4), 0 0 0 6px rgba(255, 255, 255, 0.2);
+}
+/* line 47, src\css\controls\imports\slider.less */
+.jw-slider-horizontal,
+.jw-slider-vertical {
+  display: flex;
+}
+/* line 53, src\css\controls\imports\slider.less */
+.jw-slider-horizontal .jw-slider-container {
+  height: 5px;
+  width: 100%;
+}
+/* line 57, src\css\controls\imports\slider.less */
+.jw-slider-horizontal .jw-rail,
+.jw-slider-horizontal .jw-buffer,
+.jw-slider-horizontal .jw-progress,
+.jw-slider-horizontal .jw-cue,
+.jw-slider-horizontal .jw-knob {
+  top: 50%;
+}
+/* line 65, src\css\controls\imports\slider.less */
+.jw-slider-horizontal .jw-rail,
+.jw-slider-horizontal .jw-buffer,
+.jw-slider-horizontal .jw-progress,
+.jw-slider-horizontal .jw-cue {
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+/* line 72, src\css\controls\imports\slider.less */
+.jw-slider-horizontal .jw-rail,
+.jw-slider-horizontal .jw-buffer,
+.jw-slider-horizontal .jw-progress {
+  height: 5px;
+}
+/* line 78, src\css\controls\imports\slider.less */
+.jw-slider-horizontal .jw-rail {
+  width: 100%;
+}
+/* line 83, src\css\controls\imports\slider.less */
+.jw-slider-vertical {
+  align-items: center;
+  flex-direction: column;
+}
+/* line 87, src\css\controls\imports\slider.less */
+.jw-slider-vertical .jw-slider-container {
+  height: 88px;
+  width: 5px;
+}
+/* line 91, src\css\controls\imports\slider.less */
+.jw-slider-vertical .jw-rail,
+.jw-slider-vertical .jw-buffer,
+.jw-slider-vertical .jw-progress,
+.jw-slider-vertical .jw-knob {
+  left: 50%;
+}
+/* line 98, src\css\controls\imports\slider.less */
+.jw-slider-vertical .jw-rail,
+.jw-slider-vertical .jw-buffer,
+.jw-slider-vertical .jw-progress {
+  height: 100%;
+  width: 5px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  transition: -webkit-transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  bottom: 0;
+}
+/* line 108, src\css\controls\imports\slider.less */
+.jw-slider-vertical .jw-knob {
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+/* line 113, src\css\controls\imports\slider.less */
+.jw-slider-time.jw-tab-focus:focus .jw-rail {
+  outline: solid 2px #4d90fe;
+}
+/* line 117, src\css\controls\imports\slider.less */
+.jw-slider-time,
+.jw-horizontal-volume-container .jw-slider-volume {
+  height: 17px;
+  width: 100%;
+  align-items: center;
+  background: transparent none;
+  padding: 0 12px;
+}
+/* line 125, src\css\controls\imports\slider.less */
+.jw-slider-time .jw-cue {
+  background-color: rgba(33, 33, 33, 0.8);
+  cursor: pointer;
+  position: absolute;
+  width: 6px;
+}
+/* line 132, src\css\controls\imports\slider.less */
+.jw-slider-time,
+.jw-horizontal-volume-container {
+  z-index: 1;
+  outline: none;
+}
+/* line 137, src\css\controls\imports\slider.less */
+.jw-slider-time .jw-rail,
+.jw-horizontal-volume-container .jw-rail,
+.jw-slider-time .jw-buffer,
+.jw-horizontal-volume-container .jw-buffer,
+.jw-slider-time .jw-progress,
+.jw-horizontal-volume-container .jw-progress,
+.jw-slider-time .jw-cue,
+.jw-horizontal-volume-container .jw-cue {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  height: 100%;
+  -webkit-transform: translate(0, -50%) scale(1, 0.6);
+          transform: translate(0, -50%) scale(1, 0.6);
+  transition: -webkit-transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+}
+/* line 151, src\css\controls\imports\slider.less */
+.jw-slider-time:hover .jw-rail,
+.jw-horizontal-volume-container:hover .jw-rail,
+.jw-slider-time:focus .jw-rail,
+.jw-horizontal-volume-container:focus .jw-rail,
+.jw-flag-dragging .jw-slider-time .jw-rail,
+.jw-flag-dragging .jw-horizontal-volume-container .jw-rail,
+.jw-flag-touch .jw-slider-time .jw-rail,
+.jw-flag-touch .jw-horizontal-volume-container .jw-rail,
+.jw-slider-time:hover .jw-buffer,
+.jw-horizontal-volume-container:hover .jw-buffer,
+.jw-slider-time:focus .jw-buffer,
+.jw-horizontal-volume-container:focus .jw-buffer,
+.jw-flag-dragging .jw-slider-time .jw-buffer,
+.jw-flag-dragging .jw-horizontal-volume-container .jw-buffer,
+.jw-flag-touch .jw-slider-time .jw-buffer,
+.jw-flag-touch .jw-horizontal-volume-container .jw-buffer,
+.jw-slider-time:hover .jw-progress,
+.jw-horizontal-volume-container:hover .jw-progress,
+.jw-slider-time:focus .jw-progress,
+.jw-horizontal-volume-container:focus .jw-progress,
+.jw-flag-dragging .jw-slider-time .jw-progress,
+.jw-flag-dragging .jw-horizontal-volume-container .jw-progress,
+.jw-flag-touch .jw-slider-time .jw-progress,
+.jw-flag-touch .jw-horizontal-volume-container .jw-progress,
+.jw-slider-time:hover .jw-cue,
+.jw-horizontal-volume-container:hover .jw-cue,
+.jw-slider-time:focus .jw-cue,
+.jw-horizontal-volume-container:focus .jw-cue,
+.jw-flag-dragging .jw-slider-time .jw-cue,
+.jw-flag-dragging .jw-horizontal-volume-container .jw-cue,
+.jw-flag-touch .jw-slider-time .jw-cue,
+.jw-flag-touch .jw-horizontal-volume-container .jw-cue {
+  -webkit-transform: translate(0, -50%) scale(1, 1);
+          transform: translate(0, -50%) scale(1, 1);
+}
+/* line 161, src\css\controls\imports\slider.less */
+.jw-slider-time:hover .jw-knob,
+.jw-horizontal-volume-container:hover .jw-knob,
+.jw-slider-time:focus .jw-knob,
+.jw-horizontal-volume-container:focus .jw-knob {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+/* line 166, src\css\controls\imports\slider.less */
+.jw-slider-time .jw-rail,
+.jw-horizontal-volume-container .jw-rail {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 170, src\css\controls\imports\slider.less */
+.jw-slider-time .jw-buffer,
+.jw-horizontal-volume-container .jw-buffer {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+/* line 174, src\css\controls\imports\slider.less */
+.jw-flag-touch .jw-slider-time::before,
+.jw-flag-touch .jw-horizontal-volume-container::before {
+  height: 44px;
+  width: 100%;
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: calc(100% - 17px);
+  left: 0;
+}
+/* line 184, src\css\controls\imports\slider.less */
+.jw-breakpoint-0.jw-flag-touch .jw-slider-time::before,
+.jw-breakpoint-0.jw-flag-touch .jw-horizontal-volume-container::before {
+  height: 34px;
+}
+/* line 188, src\css\controls\imports\slider.less */
+.jw-slider-time.jw-tab-focus:focus .jw-rail,
+.jw-horizontal-volume-container.jw-tab-focus:focus .jw-rail {
+  outline: solid 2px #4d90fe;
+}
+/* line 194, src\css\controls\imports\slider.less */
+.jw-flag-horizontal-slider .jw-overlay {
+  display: none;
+}
+/* line 201, src\css\controls\imports\slider.less */
+.jw-flag-audio-player .jw-flag-horizontal-slider ~ .jw-horizontal-volume-container,
+.jwplayer:not(.jw-flag-small-player) .jw-flag-horizontal-slider ~ .jw-horizontal-volume-container {
+  display: flex;
+  transition: width 300ms cubic-bezier(0, 0.25, 0.25, 1);
+  width: 0;
+}
+/* line 206, src\css\controls\imports\slider.less */
+.jw-flag-audio-player .jw-flag-horizontal-slider ~ .jw-horizontal-volume-container.jw-open,
+.jwplayer:not(.jw-flag-small-player) .jw-flag-horizontal-slider ~ .jw-horizontal-volume-container.jw-open {
+  width: 140px;
+}
+/* line 209, src\css\controls\imports\slider.less */
+.jw-flag-audio-player .jw-flag-horizontal-slider ~ .jw-horizontal-volume-container.jw-open .jw-slider-volume,
+.jwplayer:not(.jw-flag-small-player) .jw-flag-horizontal-slider ~ .jw-horizontal-volume-container.jw-open .jw-slider-volume {
+  padding-right: 24px;
+  opacity: 1;
+}
+/* line 215, src\css\controls\imports\slider.less */
+.jw-flag-audio-player .jw-flag-horizontal-slider ~ .jw-horizontal-volume-container .jw-slider-volume,
+.jwplayer:not(.jw-flag-small-player) .jw-flag-horizontal-slider ~ .jw-horizontal-volume-container .jw-slider-volume {
+  transition: opacity 300ms;
+  opacity: 0;
+}
+/* line 219, src\css\controls\imports\slider.less */
+.jw-flag-audio-player .jw-flag-horizontal-slider ~ .jw-horizontal-volume-container .jw-slider-volume .jw-knob,
+.jwplayer:not(.jw-flag-small-player) .jw-flag-horizontal-slider ~ .jw-horizontal-volume-container .jw-slider-volume .jw-knob {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/* line 226, src\css\controls\imports\slider.less */
+.jw-flag-audio-player .jw-button-container .jw-icon,
+.jwplayer:not(.jw-flag-small-player) .jw-button-container .jw-icon {
+  flex: 0 0 auto;
+}
+/* line 233, src\css\controls\imports\slider.less */
+.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-slider-time {
+  height: 17px;
+  padding: 0;
+}
+/* line 237, src\css\controls\imports\slider.less */
+.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-slider-time .jw-slider-container {
+  height: 10px;
+}
+/* line 241, src\css\controls\imports\slider.less */
+.jw-breakpoint--1:not(.jw-flag-audio-player) .jw-slider-time .jw-knob {
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  height: 12px;
+  width: 10px;
+}
+/* line 251, src\css\controls\imports\slider.less */
+.jw-breakpoint-0 .jw-slider-time {
+  height: 11px;
+}
+/* line 256, src\css\controls\imports\slider.less */
+.jw-horizontal-volume-container {
+  display: none;
+}
+/* line 1, src\css\controls\imports\modal.less */
+.jw-modal {
+  width: 284px;
+}
+/* line 4, src\css\controls\imports\modal.less */
+.jw-breakpoint-7 .jw-modal,
+.jw-breakpoint-6 .jw-modal,
+.jw-breakpoint-5 .jw-modal {
+  height: 232px;
+}
+/* line 10, src\css\controls\imports\modal.less */
+.jw-breakpoint-4 .jw-modal,
+.jw-breakpoint-3 .jw-modal {
+  height: 192px;
+}
+/* line 15, src\css\controls\imports\modal.less */
+.jw-breakpoint-2 .jw-modal,
+.jw-flag-small-player .jw-modal {
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  max-height: none;
+  max-width: none;
+  z-index: 2;
+}
+/* line 7, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick {
+  display: none;
+  position: absolute;
+  white-space: nowrap;
+}
+/* line 12, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick.jw-open {
+  display: block;
+}
+/* line 16, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick .jw-rightclick-list {
+  border-radius: 1px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 22, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick .jw-rightclick-list .jw-rightclick-item {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #444;
+  margin: 0;
+}
+/* line 27, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick .jw-rightclick-list .jw-rightclick-item .jw-rightclick-logo {
+  color: #fff;
+  display: inline-flex;
+  padding: 0 10px 0 0;
+  vertical-align: middle;
+}
+/* line 33, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick .jw-rightclick-list .jw-rightclick-item .jw-rightclick-logo .jw-svg-icon {
+  height: 20px;
+  width: 20px;
+}
+/* line 38, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick .jw-rightclick-list .jw-rightclick-item .jw-rightclick-link {
+  border: none;
+  color: #fff;
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1em;
+  padding: 15px 23px;
+  text-align: start;
+  text-decoration: none;
+  width: 100%;
+}
+/* line 51, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick .jw-rightclick-list .jw-rightclick-item:last-child {
+  border-bottom: none;
+}
+/* line 55, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick .jw-rightclick-list .jw-rightclick-item:hover {
+  cursor: pointer;
+}
+/* line 60, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick .jw-rightclick-list .jw-featured {
+  vertical-align: middle;
+}
+/* line 63, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick .jw-rightclick-list .jw-featured .jw-rightclick-link {
+  color: #fff;
+}
+/* line 66, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick .jw-rightclick-list .jw-featured .jw-rightclick-link span {
+  color: #fff;
+  font-size: 12px;
+}
+/* line 74, src\css\controls\imports\rightclick.less */
+.jwplayer .jw-rightclick .jw-rightclick-link {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+/* line 3, src\css\controls\imports\tooltip.less */
+.jw-icon-tooltip.jw-open .jw-overlay {
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+/* line 8, src\css\controls\imports\tooltip.less */
+.jw-icon-tooltip.jw-open .jw-overlay:focus {
+  outline: none;
+}
+/* line 11, src\css\controls\imports\tooltip.less */
+.jw-icon-tooltip.jw-open .jw-overlay:focus.jw-tab-focus {
+  outline: solid 2px #4d90fe;
+}
+/* line 18, src\css\controls\imports\tooltip.less */
+.jw-slider-time .jw-overlay:before {
+  height: 1em;
+  top: auto;
+}
+/* line 23, src\css\controls\imports\tooltip.less */
+.jw-slider-time .jw-icon-tooltip.jw-open .jw-overlay {
+  pointer-events: none;
+}
+/* line 28, src\css\controls\imports\tooltip.less */
+.jw-volume-tip {
+  padding: 13px 0 26px;
+}
+/* line 32, src\css\controls\imports\tooltip.less */
+.jw-time-tip,
+.jw-controlbar .jw-tooltip,
+.jw-settings-menu .jw-tooltip {
+  height: auto;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: block;
+  margin: 0 0 14px;
+  pointer-events: none;
+  position: relative;
+  z-index: 0;
+}
+/* line 42, src\css\controls\imports\tooltip.less */
+.jw-time-tip::after,
+.jw-controlbar .jw-tooltip::after,
+.jw-settings-menu .jw-tooltip::after {
+  top: 100%;
+  position: absolute;
+  left: 50%;
+  height: 14px;
+  width: 14px;
+  border-radius: 1px;
+  background-color: currentColor;
+  -webkit-transform-origin: 75% 50%;
+          transform-origin: 75% 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  z-index: -1;
+}
+/* line 53, src\css\controls\imports\tooltip.less */
+.jw-time-tip .jw-text,
+.jw-controlbar .jw-tooltip .jw-text,
+.jw-settings-menu .jw-tooltip .jw-text {
+  background-color: #fff;
+  border-radius: 1px;
+  color: #000;
+  font-size: 10px;
+  height: auto;
+  line-height: 1;
+  padding: 7px 10px;
+  display: inline-block;
+  min-width: 100%;
+  vertical-align: middle;
+  min-height: 2.4em;
+}
+/* line 69, src\css\controls\imports\tooltip.less */
+.jw-controlbar .jw-overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin: 0;
+  min-height: 44px;
+  min-width: 44px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 150ms cubic-bezier(0, 0.25, 0.25, 1);
+  transition-property: opacity, visibility;
+  transition-delay: 0s, 150ms;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 100%;
+  z-index: 1;
+}
+/* line 83, src\css\controls\imports\tooltip.less */
+.jw-controlbar .jw-overlay .jw-contents {
+  position: relative;
+}
+/* line 88, src\css\controls\imports\tooltip.less */
+.jw-controlbar .jw-option {
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  list-style: none;
+  height: 1.5em;
+  font-family: inherit;
+  line-height: 1.5em;
+  padding: 0 0.5em;
+  font-size: 0.8em;
+  margin: 0;
+}
+/* line 100, src\css\controls\imports\tooltip.less */
+.jw-controlbar .jw-option::before {
+  padding-right: 0.125em;
+}
+/* line 108, src\css\controls\imports\tooltip.less */
+.jw-controlbar .jw-tooltip,
+.jw-settings-menu .jw-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  transition: 100ms 0s cubic-bezier(0, 0.25, 0.25, 1);
+  transition-property: opacity, visibility, -webkit-transform;
+  transition-property: opacity, transform, visibility;
+  transition-property: opacity, transform, visibility, -webkit-transform;
+  visibility: hidden;
+  white-space: nowrap;
+  width: auto;
+  z-index: 1;
+}
+/* line 120, src\css\controls\imports\tooltip.less */
+.jw-controlbar .jw-tooltip.jw-open,
+.jw-settings-menu .jw-tooltip.jw-open {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -10px);
+          transform: translate(-50%, -10px);
+  transition-duration: 150ms;
+  transition-delay: 500ms, 0s, 500ms;
+  visibility: visible;
+}
+/* line 128, src\css\controls\imports\tooltip.less */
+.jw-controlbar .jw-tooltip.jw-tooltip-fullscreen,
+.jw-settings-menu .jw-tooltip.jw-tooltip-fullscreen {
+  left: auto;
+  right: 0;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+/* line 133, src\css\controls\imports\tooltip.less */
+.jw-controlbar .jw-tooltip.jw-tooltip-fullscreen.jw-open,
+.jw-settings-menu .jw-tooltip.jw-tooltip-fullscreen.jw-open {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+/* line 137, src\css\controls\imports\tooltip.less */
+.jw-controlbar .jw-tooltip.jw-tooltip-fullscreen::after,
+.jw-settings-menu .jw-tooltip.jw-tooltip-fullscreen::after {
+  left: auto;
+  right: 9px;
+}
+/* line 145, src\css\controls\imports\tooltip.less */
+.jw-tooltip-time {
+  height: auto;
+  width: 0;
+  bottom: 100%;
+  line-height: normal;
+  padding: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/* line 153, src\css\controls\imports\tooltip.less */
+.jw-tooltip-time .jw-overlay {
+  bottom: 0;
+  min-height: 0;
+  width: auto;
+}
+/* line 160, src\css\controls\imports\tooltip.less */
+.jw-tooltip {
+  bottom: 57px;
+  display: none;
+  position: absolute;
+}
+/* line 165, src\css\controls\imports\tooltip.less */
+.jw-tooltip .jw-text {
+  height: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  direction: unset;
+  max-width: 246px;
+  overflow: hidden;
+}
+/* line 174, src\css\controls\imports\tooltip.less */
+.jw-flag-audio-player .jw-tooltip {
+  display: none;
+}
+/* line 179, src\css\controls\imports\tooltip.less */
+.jw-flag-small-player .jw-time-thumb {
+  display: none;
+}
+/* line 4, src\css\controls\imports\shortcuts-tooltip.less */
+.jwplayer .jw-shortcuts-tooltip {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  background: rgba(38, 38, 38, 0.8);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  color: #fff;
+  pointer-events: all;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  overflow: hidden;
+  flex-direction: column;
+  z-index: 1;
+}
+/* line 19, src\css\controls\imports\shortcuts-tooltip.less */
+.jwplayer .jw-shortcuts-tooltip.jw-open {
+  display: flex;
+}
+/* line 23, src\css\controls\imports\shortcuts-tooltip.less */
+.jwplayer .jw-shortcuts-tooltip .jw-shortcuts-close {
+  flex: 0 0 auto;
+  margin: 5px 5px 5px auto;
+}
+/* line 28, src\css\controls\imports\shortcuts-tooltip.less */
+.jwplayer .jw-shortcuts-tooltip .jw-shortcuts-container {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: column;
+  font-size: 12px;
+  margin: 0 20px 20px;
+  overflow-y: auto;
+  padding: 5px;
+}
+/* line 7, src\css\shared-imports\mixins.less */
+.jwplayer .jw-shortcuts-tooltip .jw-shortcuts-container::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+}
+/* line 12, src\css\shared-imports\mixins.less */
+.jwplayer .jw-shortcuts-tooltip .jw-shortcuts-container::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border: 1px solid #262626;
+  border-radius: 6px;
+}
+/* line 38, src\css\controls\imports\shortcuts-tooltip.less */
+.jwplayer .jw-shortcuts-tooltip .jw-shortcuts-container .jw-shortcuts-title {
+  font-weight: bold;
+}
+/* line 42, src\css\controls\imports\shortcuts-tooltip.less */
+.jwplayer .jw-shortcuts-tooltip .jw-shortcuts-container .jw-shortcuts-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+/* line 49, src\css\controls\imports\shortcuts-tooltip.less */
+.jwplayer .jw-shortcuts-tooltip .jw-shortcuts-container .jw-shortcuts-tooltip-list {
+  display: flex;
+  max-width: 340px;
+  margin: 0 10px;
+}
+/* line 54, src\css\controls\imports\shortcuts-tooltip.less */
+.jwplayer .jw-shortcuts-tooltip .jw-shortcuts-container .jw-shortcuts-tooltip-list .jw-shortcuts-tooltip-descriptions {
+  width: 100%;
+}
+/* line 58, src\css\controls\imports\shortcuts-tooltip.less */
+.jwplayer .jw-shortcuts-tooltip .jw-shortcuts-container .jw-shortcuts-tooltip-list .jw-shortcuts-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 100%;
+}
+/* line 65, src\css\controls\imports\shortcuts-tooltip.less */
+.jwplayer .jw-shortcuts-tooltip .jw-shortcuts-container .jw-shortcuts-tooltip-list .jw-shortcuts-row .jw-shortcuts-description {
+  margin-right: 10px;
+  max-width: 70%;
+}
+/* line 70, src\css\controls\imports\shortcuts-tooltip.less */
+.jwplayer .jw-shortcuts-tooltip .jw-shortcuts-container .jw-shortcuts-tooltip-list .jw-shortcuts-row .jw-shortcuts-key {
+  background: #fefefe;
+  color: #333;
+  overflow: hidden;
+  padding: 7px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 3, src\css\controls\imports\skipad.less */
+.jw-skip {
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+  position: absolute;
+  display: flex;
+  right: 0.75em;
+  bottom: 56px;
+  padding: 0.5em;
+  border: 1px solid #333333;
+  background-color: #000;
+  align-items: center;
+  height: 2em;
+}
+/* line 16, src\css\controls\imports\skipad.less */
+.jw-skip.jw-tab-focus:focus {
+  outline: solid 2px #4d90fe;
+}
+/* line 20, src\css\controls\imports\skipad.less */
+.jw-skip.jw-skippable {
+  cursor: pointer;
+  padding: 0.25em 0.75em;
+}
+/* line 24, src\css\controls\imports\skipad.less */
+.jw-skip.jw-skippable:hover {
+  cursor: pointer;
+  color: #fff;
+}
+/* line 29, src\css\controls\imports\skipad.less */
+.jw-skip.jw-skippable .jw-skip-icon {
+  display: inline;
+  height: 24px;
+  width: 24px;
+  margin: 0;
+}
+/* line 37, src\css\controls\imports\skipad.less */
+.jw-breakpoint-7 .jw-skip {
+  padding: 1.35em 1em;
+  bottom: 130px;
+}
+/* line 41, src\css\controls\imports\skipad.less */
+.jw-breakpoint-7 .jw-skip .jw-text {
+  font-size: 1em;
+  font-weight: normal;
+}
+/* line 46, src\css\controls\imports\skipad.less */
+.jw-breakpoint-7 .jw-skip .jw-icon-inline {
+  height: 30px;
+  width: 30px;
+}
+/* line 49, src\css\controls\imports\skipad.less */
+.jw-breakpoint-7 .jw-skip .jw-icon-inline .jw-svg-icon {
+  height: 30px;
+  width: 30px;
+}
+/* line 55, src\css\controls\imports\skipad.less */
+.jw-skip .jw-skip-icon {
+  display: none;
+  margin-left: -0.75em;
+  padding: 0 0.5em;
+  pointer-events: none;
+}
+/* line 61, src\css\controls\imports\skipad.less */
+.jw-skip .jw-skip-icon .jw-svg-icon-next {
+  display: block;
+  padding: 0;
+}
+/* line 67, src\css\controls\imports\skipad.less */
+.jw-skip .jw-text,
+.jw-skip .jw-skip-icon {
+  vertical-align: middle;
+  font-size: 0.7em;
+}
+/* line 73, src\css\controls\imports\skipad.less */
+.jw-skip .jw-text {
+  font-weight: bold;
+}
+/* line 3, src\css\controls\imports\cast.less */
+.jw-cast {
+  background-size: cover;
+  display: none;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+/* line 11, src\css\controls\imports\cast.less */
+.jw-cast-container {
+  background: linear-gradient(180deg, rgba(25, 25, 25, 0.75), rgba(25, 25, 25, 0.25), rgba(25, 25, 25, 0));
+  left: 0;
+  padding: 20px 20px 80px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 20, src\css\controls\imports\cast.less */
+.jw-cast-text {
+  color: #fff;
+  font-size: 1.6em;
+}
+/* line 24, src\css\controls\imports\cast.less */
+.jw-breakpoint--1 .jw-cast-text,
+.jw-breakpoint-0 .jw-cast-text {
+  font-size: 1.15em;
+}
+/* line 29, src\css\controls\imports\cast.less */
+.jw-breakpoint-1 .jw-cast-text,
+.jw-breakpoint-2 .jw-cast-text,
+.jw-breakpoint-3 .jw-cast-text {
+  font-size: 1.3em;
+}
+/* line 4, src\css\controls\imports\nextup.less */
+.jw-nextup-container {
+  position: absolute;
+  bottom: 66px;
+  left: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 12px;
+  pointer-events: none;
+  right: 0;
+  text-align: right;
+  visibility: hidden;
+  width: 100%;
+}
+/* line 16, src\css\controls\imports\nextup.less */
+.jw-settings-open .jw-nextup-container,
+.jw-info-open .jw-nextup-container {
+  display: none;
+}
+/* line 21, src\css\controls\imports\nextup.less */
+.jw-breakpoint-7 .jw-nextup-container {
+  padding: 60px;
+}
+/* line 25, src\css\controls\imports\nextup.less */
+.jw-flag-small-player .jw-nextup-container {
+  padding: 0 12px 0 0;
+}
+/* line 28, src\css\controls\imports\nextup.less */
+.jw-flag-small-player .jw-nextup-container .jw-nextup-title,
+.jw-flag-small-player .jw-nextup-container .jw-nextup-duration,
+.jw-flag-small-player .jw-nextup-container .jw-nextup-close {
+  display: none;
+}
+/* line 34, src\css\controls\imports\nextup.less */
+.jw-flag-small-player .jw-nextup-container .jw-nextup-tooltip {
+  height: 30px;
+}
+/* line 38, src\css\controls\imports\nextup.less */
+.jw-flag-small-player .jw-nextup-container .jw-nextup-header {
+  font-size: 12px;
+}
+/* line 42, src\css\controls\imports\nextup.less */
+.jw-flag-small-player .jw-nextup-container .jw-nextup-body {
+  justify-content: center;
+  align-items: center;
+  padding: 0.75em 0.3em;
+}
+/* line 48, src\css\controls\imports\nextup.less */
+.jw-flag-small-player .jw-nextup-container .jw-nextup-thumbnail {
+  width: 50%;
+}
+/* line 52, src\css\controls\imports\nextup.less */
+.jw-flag-small-player .jw-nextup-container .jw-nextup {
+  max-width: 65px;
+}
+/* line 55, src\css\controls\imports\nextup.less */
+.jw-flag-small-player .jw-nextup-container .jw-nextup.jw-nextup-thumbnail-visible {
+  max-width: 120px;
+}
+/* line 62, src\css\controls\imports\nextup.less */
+.jw-nextup {
+  background: rgba(38, 38, 38, 0.8);
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  max-width: 280px;
+  overflow: hidden;
+  opacity: 0;
+  position: relative;
+  width: 64%;
+  pointer-events: all;
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+  transition: 150ms cubic-bezier(0, 0.25, 0.25, 1);
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  transition-delay: 0s;
+}
+/* line 79, src\css\controls\imports\nextup.less */
+.jw-nextup:hover .jw-nextup-tooltip {
+  color: #fff;
+}
+/* line 83, src\css\controls\imports\nextup.less */
+.jw-nextup.jw-nextup-thumbnail-visible {
+  max-width: 400px;
+}
+/* line 86, src\css\controls\imports\nextup.less */
+.jw-nextup.jw-nextup-thumbnail-visible .jw-nextup-thumbnail {
+  display: block;
+}
+/* line 92, src\css\controls\imports\nextup.less */
+.jw-nextup-container-visible {
+  visibility: visible;
+}
+/* line 95, src\css\controls\imports\nextup.less */
+.jw-nextup-container-visible .jw-nextup {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  transition-delay: 0s, 0s, 150ms;
+}
+/* line 102, src\css\controls\imports\nextup.less */
+.jw-nextup-tooltip {
+  display: flex;
+  height: 80px;
+}
+/* line 107, src\css\controls\imports\nextup.less */
+.jw-nextup-thumbnail {
+  width: 120px;
+  background-position: center;
+  background-size: cover;
+  flex: 0 0 auto;
+  display: none;
+}
+/* line 115, src\css\controls\imports\nextup.less */
+.jw-nextup-body {
+  flex: 1 1 auto;
+  overflow: hidden;
+  padding: 0.75em 0.875em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+/* line 124, src\css\controls\imports\nextup.less */
+.jw-nextup-header,
+.jw-nextup-title {
+  font-size: 14px;
+  line-height: 1.35;
+}
+/* line 130, src\css\controls\imports\nextup.less */
+.jw-nextup-header {
+  font-weight: bold;
+}
+/* line 134, src\css\controls\imports\nextup.less */
+.jw-nextup-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+/* line 141, src\css\controls\imports\nextup.less */
+.jw-nextup-duration {
+  align-self: flex-end;
+  text-align: right;
+  font-size: 12px;
+}
+/* line 147, src\css\controls\imports\nextup.less */
+.jw-nextup-close {
+  height: 24px;
+  width: 24px;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  margin: 6px;
+  visibility: hidden;
+}
+/* line 156, src\css\controls\imports\nextup.less */
+.jw-nextup-close:hover {
+  color: #fff;
+}
+/* line 162, src\css\controls\imports\nextup.less */
+.jw-nextup-sticky .jw-nextup-close {
+  visibility: visible;
+}
+/* line 3, src\css\controls\imports\autostartmute.less */
+.jw-autostart-mute {
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(33, 33, 33, 0.4);
+  padding: 5px 4px 5px 6px;
+  display: none;
+}
+/* line 15, src\css\controls\imports\autostartmute.less */
+.jwplayer.jw-flag-autostart:not(.jw-flag-media-audio) .jw-nextup {
+  display: none;
+}
+/* line 3, src\css\controls\imports\settings-menu.less */
+.jw-settings-menu {
+  position: absolute;
+  bottom: 57px;
+  right: 12px;
+  align-items: flex-start;
+  background-color: #262626;
+  display: none;
+  flex-flow: column nowrap;
+  max-width: 284px;
+  pointer-events: auto;
+}
+/* line 12, src\css\controls\imports\settings-menu.less */
+.jw-settings-open .jw-settings-menu {
+  display: flex;
+}
+/* line 18, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-7 .jw-settings-menu {
+  bottom: 130px;
+  right: 60px;
+  max-height: none;
+  max-width: none;
+  height: 35%;
+  width: 25%;
+}
+/* line 27, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-7 .jw-settings-menu .jw-settings-topbar:not(.jw-nested-menu-open) .jw-icon-inline {
+  height: 60px;
+  width: 60px;
+}
+/* line 30, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-7 .jw-settings-menu .jw-settings-topbar:not(.jw-nested-menu-open) .jw-icon-inline .jw-svg-icon {
+  height: 30px;
+  width: 30px;
+}
+/* line 35, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-7 .jw-settings-menu .jw-settings-topbar:not(.jw-nested-menu-open) .jw-icon-inline .jw-tooltip .jw-text {
+  font-size: 1em;
+}
+/* line 42, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-7 .jw-settings-menu .jw-settings-back {
+  min-width: 60px;
+}
+/* line 47, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-6 .jw-settings-menu,
+.jw-breakpoint-5 .jw-settings-menu {
+  height: 232px;
+  width: 284px;
+  max-height: 232px;
+}
+/* line 53, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-4 .jw-settings-menu,
+.jw-breakpoint-3 .jw-settings-menu {
+  height: 192px;
+  width: 284px;
+  max-height: 192px;
+}
+/* line 59, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-2 .jw-settings-menu {
+  height: 179px;
+  width: 284px;
+  max-height: 179px;
+}
+/* line 64, src\css\controls\imports\settings-menu.less */
+.jw-flag-small-player .jw-settings-menu {
+  max-width: none;
+}
+/* line 70, src\css\controls\imports\settings-menu.less */
+.jw-settings-menu .jw-icon.jw-button-color::after {
+  height: 100%;
+  width: 24px;
+  box-shadow: inset 0 -3px 0 -1px currentColor;
+  margin: auto;
+  opacity: 0;
+  transition: opacity 150ms cubic-bezier(0, 0.25, 0.25, 1);
+}
+/* line 80, src\css\controls\imports\settings-menu.less */
+.jw-settings-menu .jw-icon.jw-button-color[aria-expanded="true"]::after {
+  opacity: 1;
+}
+/* line 86, src\css\controls\imports\settings-menu.less */
+.jw-settings-menu .jw-settings-reset {
+  text-decoration: underline;
+}
+/* line 91, src\css\controls\imports\settings-menu.less */
+.jw-settings-topbar {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex: 0 0 auto;
+  padding: 3px 5px 0;
+  width: 100%;
+}
+/* line 99, src\css\controls\imports\settings-menu.less */
+.jw-settings-topbar.jw-nested-menu-open {
+  padding: 0;
+}
+/* line 102, src\css\controls\imports\settings-menu.less */
+.jw-settings-topbar.jw-nested-menu-open .jw-icon:not(.jw-settings-close):not(.jw-settings-back) {
+  display: none;
+}
+/* line 106, src\css\controls\imports\settings-menu.less */
+.jw-settings-topbar.jw-nested-menu-open .jw-svg-icon-close {
+  width: 20px;
+}
+/* line 110, src\css\controls\imports\settings-menu.less */
+.jw-settings-topbar.jw-nested-menu-open .jw-svg-icon-arrow-left {
+  height: 12px;
+}
+/* line 114, src\css\controls\imports\settings-menu.less */
+.jw-settings-topbar.jw-nested-menu-open .jw-settings-topbar-text {
+  display: block;
+  outline: none;
+}
+/* line 120, src\css\controls\imports\settings-menu.less */
+.jw-settings-topbar .jw-settings-back {
+  min-width: 44px;
+}
+/* line 124, src\css\controls\imports\settings-menu.less */
+.jw-settings-topbar .jw-settings-topbar-buttons {
+  display: inherit;
+  width: 100%;
+  height: 100%;
+}
+/* line 130, src\css\controls\imports\settings-menu.less */
+.jw-settings-topbar .jw-settings-topbar-text {
+  display: none;
+  color: #fff;
+  font-size: 13px;
+  width: 100%;
+}
+/* line 137, src\css\controls\imports\settings-menu.less */
+.jw-settings-topbar .jw-settings-close {
+  margin-left: auto;
+}
+/* line 142, src\css\controls\imports\settings-menu.less */
+.jw-settings-submenu {
+  display: none;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 8px 20px 0 5px;
+}
+/* line 7, src\css\shared-imports\mixins.less */
+.jw-settings-submenu::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+}
+/* line 12, src\css\shared-imports\mixins.less */
+.jw-settings-submenu::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border: 1px solid #262626;
+  border-radius: 6px;
+}
+/* line 150, src\css\controls\imports\settings-menu.less */
+.jw-settings-submenu.jw-settings-submenu-active {
+  display: block;
+}
+/* line 154, src\css\controls\imports\settings-menu.less */
+.jw-settings-submenu .jw-submenu-topbar {
+  box-shadow: 0 2px 9px 0 #1d1d1d;
+  background-color: #2f2d2d;
+  margin: -8px -20px 0 -5px;
+}
+/* line 159, src\css\controls\imports\settings-menu.less */
+.jw-settings-submenu .jw-submenu-topbar .jw-settings-content-item {
+  cursor: pointer;
+  text-align: right;
+  padding-right: 15px;
+  text-decoration: underline;
+}
+/* line 167, src\css\controls\imports\settings-menu.less */
+.jw-settings-submenu .jw-settings-value-wrapper {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+/* line 172, src\css\controls\imports\settings-menu.less */
+.jw-settings-submenu .jw-settings-value-wrapper .jw-settings-content-item-arrow {
+  display: flex;
+}
+/* line 176, src\css\controls\imports\settings-menu.less */
+.jw-settings-submenu .jw-settings-value-wrapper .jw-svg-icon-arrow-right {
+  width: 8px;
+  margin-left: 5px;
+  height: 12px;
+}
+/* line 184, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-7 .jw-settings-submenu .jw-settings-content-item {
+  font-size: 1em;
+  padding: 11px 15px 11px 30px;
+}
+/* line 188, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-7 .jw-settings-submenu .jw-settings-content-item .jw-settings-item-active::before {
+  justify-content: flex-end;
+}
+/* line 192, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-7 .jw-settings-submenu .jw-settings-content-item .jw-auto-label {
+  font-size: 0.85em;
+  padding-left: 10px;
+}
+/* line 199, src\css\controls\imports\settings-menu.less */
+.jw-flag-touch .jw-settings-submenu {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 205, src\css\controls\imports\settings-menu.less */
+.jw-auto-label {
+  font-size: 10px;
+  font-weight: initial;
+  opacity: 0.75;
+  padding-left: 5px;
+}
+/* line 212, src\css\controls\imports\settings-menu.less */
+.jw-settings-content-item {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+  padding: 7px 0 7px 15px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+}
+/* line 223, src\css\controls\imports\settings-menu.less */
+.jw-settings-content-item:hover {
+  color: #fff;
+}
+/* line 227, src\css\controls\imports\settings-menu.less */
+.jw-settings-content-item:focus {
+  font-weight: bold;
+}
+/* line 231, src\css\controls\imports\settings-menu.less */
+.jw-flag-small-player .jw-settings-content-item {
+  line-height: 1.75;
+}
+/* line 236, src\css\controls\imports\settings-menu.less */
+.jw-settings-content-item.jw-tab-focus:focus {
+  border: solid 2px #4d90fe;
+}
+/* line 240, src\css\controls\imports\settings-menu.less */
+.jw-settings-item-active {
+  font-weight: bold;
+  position: relative;
+}
+/* line 244, src\css\controls\imports\settings-menu.less */
+.jw-settings-item-active::before {
+  height: 100%;
+  width: 1em;
+  align-items: center;
+  content: "\2022";
+  display: inline-flex;
+  justify-content: center;
+}
+/* line 258, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-2 .jw-settings-open .jw-display-container,
+.jw-flag-small-player .jw-settings-open .jw-display-container,
+.jw-flag-touch .jw-settings-open .jw-display-container {
+  display: none;
+}
+/* line 262, src\css\controls\imports\settings-menu.less */
+.jw-breakpoint-2 .jw-settings-open.jw-controls,
+.jw-flag-small-player .jw-settings-open.jw-controls,
+.jw-flag-touch .jw-settings-open.jw-controls {
+  z-index: 1;
+}
+/* line 268, src\css\controls\imports\settings-menu.less */
+.jw-flag-small-player .jw-settings-open .jw-controlbar {
+  display: none;
+}
+/* line 274, src\css\controls\imports\settings-menu.less */
+.jw-settings-open .jw-icon-settings::after {
+  opacity: 1;
+}
+/* line 279, src\css\controls\imports\settings-menu.less */
+.jw-settings-open .jw-tooltip-settings {
+  display: none;
+}
+/* line 284, src\css\controls\imports\settings-menu.less */
+.jw-sharing-link {
+  cursor: pointer;
+}
+/* line 2, src\css\controls\imports\switch.less */
+.jw-shortcuts-container .jw-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: ease-out 0.15s;
+  transition-property: opacity, background;
+  border-radius: 18px;
+  width: 80px;
+  height: 20px;
+  padding: 10px;
+  background: rgba(80, 80, 80, 0.8);
+  cursor: pointer;
+  font-size: inherit;
+  vertical-align: middle;
+  outline: none;
+}
+/* line 18, src\css\controls\imports\switch.less */
+.jw-shortcuts-container .jw-switch.jw-tab-focus {
+  border: solid 2px #4d90fe;
+}
+/* line 22, src\css\controls\imports\switch.less */
+.jw-shortcuts-container .jw-switch .jw-switch-knob {
+  position: absolute;
+  left: 1px;
+  transition: ease-out 0.15s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 13px;
+  width: 15px;
+  height: 15px;
+  background: #fefefe;
+}
+/* line 33, src\css\controls\imports\switch.less */
+.jw-shortcuts-container .jw-switch .jw-switch-disabled,
+.jw-shortcuts-container .jw-switch .jw-switch-enabled {
+  position: absolute;
+  transition: inherit;
+  color: #fefefe;
+}
+/* line 40, src\css\controls\imports\switch.less */
+.jw-shortcuts-container .jw-switch .jw-switch-disabled {
+  right: 8px;
+}
+/* line 44, src\css\controls\imports\switch.less */
+.jw-shortcuts-container .jw-switch .jw-switch-enabled {
+  left: 8px;
+  opacity: 0;
+}
+/* line 49, src\css\controls\imports\switch.less */
+.jw-shortcuts-container .jw-switch[aria-checked="true"] {
+  background: #475470;
+}
+/* line 52, src\css\controls\imports\switch.less */
+.jw-shortcuts-container .jw-switch[aria-checked="true"] .jw-switch-disabled {
+  opacity: 0;
+}
+/* line 56, src\css\controls\imports\switch.less */
+.jw-shortcuts-container .jw-switch[aria-checked="true"] .jw-switch-enabled {
+  opacity: 1;
+}
+/* line 60, src\css\controls\imports\switch.less */
+.jw-shortcuts-container .jw-switch[aria-checked="true"] .jw-switch-knob {
+  left: 60px;
+}
+/* line 3, src\css\controls\imports\playback-label.less */
+.jw-idle-icon-text {
+  display: none;
+  line-height: 1;
+  position: absolute;
+  text-align: center;
+  text-indent: 0.35em;
+  top: 100%;
+  white-space: nowrap;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/* line 15, src\css\controls\imports\playback-label.less */
+.jw-idle-label {
+  border-radius: 50%;
+  color: #fff;
+  -webkit-filter: drop-shadow(1px 1px 5px rgba(12, 26, 71, 0.25));
+          filter: drop-shadow(1px 1px 5px rgba(12, 26, 71, 0.25));
+  font: normal 16px/1 Arial, Helvetica, sans-serif;
+  position: relative;
+  transition: background-color 150ms cubic-bezier(0, 0.25, 0.25, 1);
+  transition-property: background-color, -webkit-filter;
+  transition-property: background-color, filter;
+  transition-property: background-color, filter, -webkit-filter;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 29, src\css\controls\imports\playback-label.less */
+.jw-state-idle .jw-icon-display.jw-idle-label .jw-idle-icon-text {
+  display: block;
+}
+/* line 33, src\css\controls\imports\playback-label.less */
+.jw-state-idle .jw-icon-display.jw-idle-label .jw-svg-icon-play {
+  -webkit-transform: scale(0.7, 0.7);
+          transform: scale(0.7, 0.7);
+}
+/* line 37, src\css\controls\imports\playback-label.less */
+.jw-breakpoint-0.jw-state-idle .jw-icon-display.jw-idle-label,
+.jw-breakpoint--1.jw-state-idle .jw-icon-display.jw-idle-label {
+  font-size: 12px;
+}
+@supports ((-webkit-filter: drop-shadow(0 0 3px #000)) or (filter: drop-shadow(0 0 3px #000))) {
+  /* line 3, src\css\controls\imports\drop-shadow-variants.less */
+  .jwplayer.jw-ab-drop-shadow .jw-controls .jw-svg-icon,
+  .jwplayer.jw-ab-drop-shadow .jw-controls .jw-icon.jw-text,
+  .jwplayer.jw-ab-drop-shadow .jw-slider-container .jw-rail,
+  .jwplayer.jw-ab-drop-shadow .jw-title {
+    text-shadow: none;
+    box-shadow: none;
+    -webkit-filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+  }
+  /* line 12, src\css\controls\imports\drop-shadow-variants.less */
+  .jwplayer.jw-ab-drop-shadow .jw-button-color {
+    opacity: 0.8;
+    transition-property: color, opacity;
+  }
+  /* line 16, src\css\controls\imports\drop-shadow-variants.less */
+  .jwplayer.jw-ab-drop-shadow .jw-button-color:not(:hover) {
+    color: #fff;
+    opacity: 0.8;
+  }
+  /* line 21, src\css\controls\imports\drop-shadow-variants.less */
+  .jwplayer.jw-ab-drop-shadow .jw-button-color:hover {
+    opacity: 1;
+  }
+  /* line 26, src\css\controls\imports\drop-shadow-variants.less */
+  .jwplayer.jw-ab-drop-shadow .jw-controls-backdrop {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), ease-in, rgba(0, 0, 0, 0.4));
+    mix-blend-mode: multiply;
+    transition-property: opacity;
+  }
+  /* line 31, src\css\controls\imports\drop-shadow-variants.less */
+  .jw-state-idle.jwplayer.jw-ab-drop-shadow .jw-controls-backdrop {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), ease-out, rgba(0, 0, 0, 0));
+    background-size: 100% 7rem;
+    background-position: 50% 0;
+  }
+  /* line 39, src\css\controls\imports\drop-shadow-variants.less */
+  .jwplayer.jw-ab-drop-shadow.jw-state-idle .jw-controls {
+    background-color: transparent;
+  }
+}
+/* line 1, src\css\controls\imports\videoThumbnail.less */
+.jw-video-thumbnail-container {
+  position: relative;
+  overflow: hidden;
+}
+/* line 5, src\css\controls\imports\videoThumbnail.less */
+.jw-video-thumbnail-container:not(.jw-related-shelf-item-image) {
+  height: 100%;
+  width: 100%;
+}
+/* line 10, src\css\controls\imports\videoThumbnail.less */
+.jw-video-thumbnail-container.jw-video-thumbnail-generated {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 16, src\css\controls\imports\videoThumbnail.less */
+.jw-video-thumbnail-container:hover,
+.jw-related-item-content:hover .jw-video-thumbnail-container,
+.jw-related-shelf-item:hover .jw-video-thumbnail-container {
+  cursor: pointer;
+}
+/* line 21, src\css\controls\imports\videoThumbnail.less */
+.jw-video-thumbnail-container:hover .jw-video-thumbnail:not(.jw-video-thumbnail-completed),
+.jw-related-item-content:hover .jw-video-thumbnail-container .jw-video-thumbnail:not(.jw-video-thumbnail-completed),
+.jw-related-shelf-item:hover .jw-video-thumbnail-container .jw-video-thumbnail:not(.jw-video-thumbnail-completed) {
+  opacity: 1;
+}
+/* line 26, src\css\controls\imports\videoThumbnail.less */
+.jw-video-thumbnail-container .jw-video-thumbnail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: unset;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  object-fit: cover;
+  background: #000;
+}
+/* line 41, src\css\controls\imports\videoThumbnail.less */
+.jw-related-item-next-up .jw-video-thumbnail-container .jw-video-thumbnail {
+  height: 100%;
+  width: auto;
+}
+/* line 46, src\css\controls\imports\videoThumbnail.less */
+.jw-video-thumbnail-container .jw-video-thumbnail.jw-video-thumbnail-visible:not(.jw-video-thumbnail-completed) {
+  opacity: 1;
+}
+/* line 50, src\css\controls\imports\videoThumbnail.less */
+.jw-video-thumbnail-container .jw-video-thumbnail.jw-video-thumbnail-completed {
+  opacity: 0;
+}
+/* line 54, src\css\controls\imports\videoThumbnail.less */
+.jw-video-thumbnail-container .jw-video-thumbnail ~ .jw-svg-icon-play {
+  display: none;
+}
+/* line 58, src\css\controls\imports\videoThumbnail.less */
+.jw-video-thumbnail-container .jw-video-thumbnail + .jw-related-shelf-item-aspect {
+  pointer-events: none;
+}
+/* line 62, src\css\controls\imports\videoThumbnail.less */
+.jw-video-thumbnail-container .jw-video-thumbnail + .jw-related-item-poster-content {
+  pointer-events: none;
+}
+/* line 1, src\css\controls\imports\abZoomThumbnail.less */
+.jw-preview {
+  overflow: hidden;
+}
+/* line 4, src\css\controls\imports\abZoomThumbnail.less */
+.jw-preview .jw-ab-zoom-thumbnail {
+  all: inherit;
+  -webkit-animation: jw-ab-zoom-thumbnail-animation 10s infinite;
+          animation: jw-ab-zoom-thumbnail-animation 10s infinite;
+}
+@-webkit-keyframes jw-ab-zoom-thumbnail-animation {
+  /* line 11, src\css\controls\imports\abZoomThumbnail.less */
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  /* line 15, src\css\controls\imports\abZoomThumbnail.less */
+  50% {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
+  /* line 19, src\css\controls\imports\abZoomThumbnail.less */
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes jw-ab-zoom-thumbnail-animation {
+  /* line 11, src\css\controls\imports\abZoomThumbnail.less */
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  /* line 15, src\css\controls\imports\abZoomThumbnail.less */
+  50% {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
+  /* line 19, src\css\controls\imports\abZoomThumbnail.less */
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+/* line 5, src\css\controls\states.less */
+.jw-state-idle {
+  /* hide control bar and clear display container padding on idle state unless cast available flag is set */
+}
+/* line 9, src\css\controls\states.less */
+.jw-state-idle:not(.jw-flag-cast-available) .jw-display {
+  padding: 0;
+}
+/* line 14, src\css\controls\states.less */
+.jw-state-idle .jw-controls {
+  background: rgba(0, 0, 0, 0.4);
+}
+/* line 21, src\css\controls\states.less */
+.jw-state-idle.jw-flag-cast-available:not(.jw-flag-audio-player) .jw-controlbar .jw-slider-time,
+.jw-state-idle.jw-flag-cardboard-available .jw-controlbar .jw-slider-time,
+.jw-state-idle.jw-flag-cast-available:not(.jw-flag-audio-player) .jw-controlbar .jw-icon:not(.jw-icon-cardboard):not(.jw-icon-cast):not(.jw-icon-airplay),
+.jw-state-idle.jw-flag-cardboard-available .jw-controlbar .jw-icon:not(.jw-icon-cardboard):not(.jw-icon-cast):not(.jw-icon-airplay) {
+  display: none;
+}
+/* line 32, src\css\controls\states.less */
+.jwplayer.jw-state-buffering .jw-display-icon-display .jw-icon:focus {
+  border: none;
+}
+/* line 36, src\css\controls\states.less */
+.jwplayer.jw-state-buffering .jw-display-icon-display .jw-icon .jw-svg-icon-buffer {
+  -webkit-animation: jw-spin 2s linear infinite;
+          animation: jw-spin 2s linear infinite;
+  display: block;
+}
+@-webkit-keyframes jw-spin {
+  /* line 42, src\css\controls\states.less */
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes jw-spin {
+  /* line 42, src\css\controls\states.less */
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/* line 49, src\css\controls\states.less */
+.jwplayer.jw-state-buffering .jw-icon-playback .jw-svg-icon-play {
+  display: none;
+}
+/* line 54, src\css\controls\states.less */
+.jwplayer.jw-state-buffering .jw-icon-display .jw-svg-icon-pause {
+  display: none;
+}
+/* line 63, src\css\controls\states.less */
+.jwplayer.jw-state-playing .jw-display .jw-icon-display .jw-svg-icon-play,
+.jwplayer.jw-state-playing .jw-icon-playback .jw-svg-icon-play {
+  display: none;
+}
+/* line 67, src\css\controls\states.less */
+.jwplayer.jw-state-playing .jw-display .jw-icon-display .jw-svg-icon-pause,
+.jwplayer.jw-state-playing .jw-icon-playback .jw-svg-icon-pause {
+  display: block;
+}
+/* line 73, src\css\controls\states.less */
+.jwplayer.jw-state-playing.jw-flag-user-inactive:not(.jw-flag-audio-player):not(.jw-flag-casting):not(.jw-flag-media-audio) .jw-controls-backdrop {
+  opacity: 0;
+}
+/* line 77, src\css\controls\states.less */
+.jwplayer.jw-state-playing.jw-flag-user-inactive:not(.jw-flag-audio-player):not(.jw-flag-casting):not(.jw-flag-media-audio) .jw-logo-bottom-left,
+.jwplayer.jw-state-playing.jw-flag-user-inactive:not(.jw-flag-audio-player):not(.jw-flag-casting):not(.jw-flag-media-audio):not(.jw-flag-autostart) .jw-logo-bottom-right {
+  bottom: 0;
+}
+/* line 85, src\css\controls\states.less */
+.jwplayer .jw-icon-playback .jw-svg-icon-stop {
+  display: none;
+}
+/* line 95, src\css\controls\states.less */
+.jwplayer.jw-state-paused .jw-svg-icon-pause,
+.jwplayer.jw-state-idle .jw-svg-icon-pause,
+.jwplayer.jw-state-error .jw-svg-icon-pause,
+.jwplayer.jw-state-complete .jw-svg-icon-pause {
+  display: none;
+}
+/* line 103, src\css\controls\states.less */
+.jwplayer.jw-state-error .jw-icon-display .jw-svg-icon-play,
+.jwplayer.jw-state-complete .jw-icon-display .jw-svg-icon-play,
+.jwplayer.jw-state-buffering .jw-icon-display .jw-svg-icon-play {
+  display: none;
+}
+/* line 109, src\css\controls\states.less */
+.jwplayer:not(.jw-state-buffering) .jw-svg-icon-buffer {
+  display: none;
+}
+/* line 115, src\css\controls\states.less */
+.jwplayer:not(.jw-state-complete) .jw-svg-icon-replay {
+  display: none;
+}
+/* line 121, src\css\controls\states.less */
+.jwplayer:not(.jw-state-error) .jw-svg-icon-error {
+  display: none;
+}
+/* line 130, src\css\controls\states.less */
+.jwplayer.jw-state-complete .jw-display .jw-icon-display .jw-svg-icon-replay {
+  display: block;
+}
+/* line 135, src\css\controls\states.less */
+.jwplayer.jw-state-complete .jw-display .jw-text {
+  display: none;
+}
+/* line 140, src\css\controls\states.less */
+.jwplayer.jw-state-complete .jw-controls {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+/* line 151, src\css\controls\states.less */
+.jw-state-idle .jw-icon-display .jw-svg-icon-pause,
+.jwplayer.jw-state-paused .jw-icon-playback .jw-svg-icon-pause,
+.jwplayer.jw-state-paused .jw-icon-display .jw-svg-icon-pause,
+.jwplayer.jw-state-complete .jw-icon-playback .jw-svg-icon-pause {
+  display: none;
+}
+/* line 162, src\css\controls\states.less */
+.jw-state-idle .jw-display-icon-rewind,
+.jwplayer.jw-state-buffering .jw-display-icon-rewind,
+.jwplayer.jw-state-complete .jw-display-icon-rewind,
+body .jw-error .jw-display-icon-rewind,
+body .jwplayer.jw-state-error .jw-display-icon-rewind,
+.jw-state-idle .jw-display-icon-next,
+.jwplayer.jw-state-buffering .jw-display-icon-next,
+.jwplayer.jw-state-complete .jw-display-icon-next,
+body .jw-error .jw-display-icon-next,
+body .jwplayer.jw-state-error .jw-display-icon-next {
+  display: none;
+}
+/* line 170, src\css\controls\states.less */
+body .jw-error .jw-icon-display,
+body .jwplayer.jw-state-error .jw-icon-display {
+  cursor: default;
+}
+/* line 173, src\css\controls\states.less */
+body .jw-error .jw-icon-display .jw-svg-icon-error,
+body .jwplayer.jw-state-error .jw-icon-display .jw-svg-icon-error {
+  display: block;
+}
+/* line 183, src\css\controls\states.less */
+body .jw-error .jw-icon-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* line 194, src\css\controls\states.less */
+body .jwplayer.jw-state-error.jw-flag-audio-player .jw-preview {
+  display: none;
+}
+/* line 198, src\css\controls\states.less */
+body .jwplayer.jw-state-error.jw-flag-audio-player .jw-title {
+  padding-top: 4px;
+}
+/* line 202, src\css\controls\states.less */
+body .jwplayer.jw-state-error.jw-flag-audio-player .jw-title-primary {
+  width: auto;
+  display: inline-block;
+  padding-right: 0.5ch;
+}
+/* line 208, src\css\controls\states.less */
+body .jwplayer.jw-state-error.jw-flag-audio-player .jw-title-secondary {
+  width: auto;
+  display: inline-block;
+  padding-left: 0;
+}
+/* line 218, src\css\controls\states.less */
+body .jwplayer.jw-state-error .jw-controlbar,
+.jwplayer.jw-state-idle:not(.jw-flag-audio-player):not(.jw-flag-cast-available):not(.jw-flag-cardboard-available) .jw-controlbar {
+  display: none;
+}
+/* line 222, src\css\controls\states.less */
+body .jwplayer.jw-state-error .jw-settings-menu,
+.jwplayer.jw-state-idle:not(.jw-flag-audio-player):not(.jw-flag-cast-available):not(.jw-flag-cardboard-available) .jw-settings-menu {
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/* line 229, src\css\controls\states.less */
+body .jwplayer.jw-state-error .jw-display,
+.jwplayer.jw-state-idle:not(.jw-flag-audio-player):not(.jw-flag-cast-available):not(.jw-flag-cardboard-available) .jw-display {
+  padding: 0;
+}
+/* line 233, src\css\controls\states.less */
+body .jwplayer.jw-state-error .jw-logo-bottom-left,
+.jwplayer.jw-state-idle:not(.jw-flag-audio-player):not(.jw-flag-cast-available):not(.jw-flag-cardboard-available) .jw-logo-bottom-left,
+body .jwplayer.jw-state-error .jw-logo-bottom-right,
+.jwplayer.jw-state-idle:not(.jw-flag-audio-player):not(.jw-flag-cast-available):not(.jw-flag-cardboard-available) .jw-logo-bottom-right {
+  bottom: 0;
+}
+/* Indentation sometimes complains about multiple selections when :not()s are included */
+/* stylelint-disable indentation */
+/* line 242, src\css\controls\states.less */
+.jwplayer.jw-state-playing.jw-flag-user-inactive .jw-display {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+/* line 250, src\css\controls\states.less */
+.jwplayer.jw-state-playing:not(.jw-flag-touch):not(.jw-flag-small-player):not(.jw-flag-casting) .jw-display,
+.jwplayer.jw-state-paused:not(.jw-flag-touch):not(.jw-flag-small-player):not(.jw-flag-casting):not(.jw-flag-play-rejected) .jw-display {
+  display: none;
+}
+/* stylelint-enable indentation */
+/* line 256, src\css\controls\states.less */
+.jwplayer.jw-state-paused.jw-flag-play-rejected:not(.jw-flag-touch):not(.jw-flag-small-player):not(.jw-flag-casting) .jw-display-icon-rewind,
+.jwplayer.jw-state-paused.jw-flag-play-rejected:not(.jw-flag-touch):not(.jw-flag-small-player):not(.jw-flag-casting) .jw-display-icon-next {
+  display: none;
+}
+/* line 265, src\css\controls\states.less */
+.jwplayer.jw-state-buffering .jw-display-icon-display .jw-text,
+.jwplayer.jw-state-complete .jw-display .jw-text {
+  display: none;
+}
+/* line 4, src\css\controls\flags\cast.less */
+.jwplayer.jw-flag-casting:not(.jw-flag-audio-player) .jw-cast {
+  display: block;
+}
+/* line 8, src\css\controls\flags\cast.less */
+.jwplayer.jw-flag-casting.jw-flag-airplay-casting .jw-display-icon-container {
+  display: none;
+}
+/* line 12, src\css\controls\flags\cast.less */
+.jwplayer.jw-flag-casting .jw-icon-hd,
+.jwplayer.jw-flag-casting .jw-captions,
+.jwplayer.jw-flag-casting .jw-icon-fullscreen,
+.jwplayer.jw-flag-casting .jw-icon-audio-tracks {
+  display: none;
+}
+/* line 20, src\css\controls\flags\cast.less */
+.jwplayer.jw-flag-casting.jw-flag-airplay-casting .jw-icon-volume {
+  display: none;
+}
+/* line 24, src\css\controls\flags\cast.less */
+.jwplayer.jw-flag-casting.jw-flag-airplay-casting .jw-icon-airplay {
+  color: #fff;
+}
+/* line 32, src\css\controls\flags\cast.less */
+.jw-state-playing.jw-flag-casting:not(.jw-flag-audio-player) .jw-display,
+.jw-state-paused.jw-flag-casting:not(.jw-flag-audio-player) .jw-display {
+  display: flex;
+}
+/* line 2, src\css\controls\flags\cast-available.less */
+.jwplayer.jw-flag-cast-available .jw-icon-cast,
+.jwplayer.jw-flag-cast-available .jw-icon-airplay {
+  display: flex;
+}
+/* line 2, src\css\controls\flags\cardboard-available.less */
+.jwplayer.jw-flag-cardboard-available .jw-icon-cardboard {
+  display: flex;
+}
+/* line 4, src\css\controls\flags\live.less */
+.jwplayer.jw-flag-live .jw-display-icon-rewind {
+  visibility: hidden;
+}
+/* line 9, src\css\controls\flags\live.less */
+.jwplayer.jw-flag-live .jw-controlbar .jw-text-elapsed,
+.jwplayer.jw-flag-live .jw-controlbar .jw-text-duration,
+.jwplayer.jw-flag-live .jw-controlbar .jw-text-countdown,
+.jwplayer.jw-flag-live .jw-controlbar .jw-slider-time {
+  display: none;
+}
+/* line 16, src\css\controls\flags\live.less */
+.jwplayer.jw-flag-live .jw-controlbar .jw-text-alt {
+  display: flex;
+}
+/* line 20, src\css\controls\flags\live.less */
+.jwplayer.jw-flag-live .jw-controlbar .jw-overlay:after {
+  display: none;
+}
+/* line 25, src\css\controls\flags\live.less */
+.jwplayer.jw-flag-live .jw-nextup-container {
+  bottom: 44px;
+}
+/* line 29, src\css\controls\flags\live.less */
+.jwplayer.jw-flag-live .jw-text-elapsed,
+.jwplayer.jw-flag-live .jw-text-duration {
+  display: none;
+}
+/* line 34, src\css\controls\flags\live.less */
+.jwplayer.jw-flag-live .jw-text-live {
+  cursor: default;
+}
+/* line 37, src\css\controls\flags\live.less */
+.jwplayer.jw-flag-live .jw-text-live:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 45, src\css\controls\flags\live.less */
+.jwplayer.jw-flag-live.jw-state-playing .jw-icon-playback .jw-svg-icon-stop,
+.jwplayer.jw-flag-live.jw-state-buffering .jw-icon-playback .jw-svg-icon-stop {
+  display: block;
+}
+/* line 49, src\css\controls\flags\live.less */
+.jwplayer.jw-flag-live.jw-state-playing .jw-icon-playback .jw-svg-icon-pause,
+.jwplayer.jw-flag-live.jw-state-buffering .jw-icon-playback .jw-svg-icon-pause {
+  display: none;
+}
+/* line 56, src\css\controls\flags\live.less */
+.jw-text-live {
+  height: 24px;
+  width: auto;
+  align-items: center;
+  border-radius: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 0 1ch;
+  text-rendering: geometricPrecision;
+  text-transform: uppercase;
+  transition: 150ms cubic-bezier(0, 0.25, 0.25, 1);
+  transition-property: box-shadow, color;
+}
+/* line 71, src\css\controls\flags\live.less */
+.jw-text-live::before {
+  height: 8px;
+  width: 8px;
+  background-color: currentColor;
+  border-radius: 50%;
+  margin-right: 6px;
+  opacity: 1;
+  transition: opacity 150ms cubic-bezier(0, 0.25, 0.25, 1);
+}
+/* line 81, src\css\controls\flags\live.less */
+.jw-text-live.jw-dvr-live {
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+/* line 84, src\css\controls\flags\live.less */
+.jw-text-live.jw-dvr-live::before {
+  opacity: 0.5;
+}
+/* line 88, src\css\controls\flags\live.less */
+.jw-text-live.jw-dvr-live:hover {
+  color: #fff;
+}
+/* Toggle mobile controls. Also used for user inactivity */
+/* line 3, src\css\controls\flags\controls-hidden.less */
+.jwplayer.jw-flag-controls-hidden .jw-logo.jw-hide {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+/* line 9, src\css\controls\flags\controls-hidden.less */
+.jwplayer.jw-flag-controls-hidden:not(.jw-flag-casting) .jw-logo-top-right {
+  top: 0;
+}
+/* line 13, src\css\controls\flags\controls-hidden.less */
+.jwplayer.jw-flag-controls-hidden .jw-plugin {
+  bottom: 0.5em;
+}
+/* line 18, src\css\controls\flags\controls-hidden.less */
+.jwplayer.jw-flag-controls-hidden:not(.jw-flag-touch.jw-breakpoint-4):not(.jw-flag-touch.jw-breakpoint-5):not(.jw-flag-touch.jw-breakpoint-6):not(.jw-flag-touch.jw-breakpoint-7) .jw-nextup-container {
+  -webkit-transform: translateY(66px);
+          transform: translateY(66px);
+}
+/* line 28, src\css\controls\flags\controls-hidden.less */
+.jwplayer.jw-flag-controls-hidden.jw-flag-touch.jw-state-playing.jw-breakpoint-7 .jw-nextup-container,
+.jwplayer.jw-flag-controls-hidden.jw-flag-touch.jw-state-playing.jw-breakpoint-6 .jw-nextup-container,
+.jwplayer.jw-flag-controls-hidden.jw-flag-touch.jw-state-playing.jw-breakpoint-5 .jw-nextup-container,
+.jwplayer.jw-flag-controls-hidden.jw-flag-touch.jw-state-playing.jw-breakpoint-4 .jw-nextup-container {
+  /* For bottom styling from touch.less */
+  -webkit-transform: translateY(4.25em);
+          transform: translateY(4.25em);
+}
+/* line 37, src\css\controls\flags\controls-hidden.less */
+.jw-flag-controls-hidden .jw-controlbar,
+.jw-flag-controls-hidden .jw-display {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition-delay: 0s, 250ms;
+}
+/* line 45, src\css\controls\flags\controls-hidden.less */
+.jw-flag-controls-hidden .jw-controls-backdrop {
+  opacity: 0;
+}
+/* line 49, src\css\controls\flags\controls-hidden.less */
+.jw-flag-controls-hidden .jw-logo {
+  visibility: visible;
+}
+/* line 3, src\css\controls\flags\controls-hidden.less */
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-state-playing .jw-logo.jw-hide {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+/* line 9, src\css\controls\flags\controls-hidden.less */
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-state-playing:not(.jw-flag-casting) .jw-logo-top-right {
+  top: 0;
+}
+/* line 13, src\css\controls\flags\controls-hidden.less */
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-state-playing .jw-plugin {
+  bottom: 0.5em;
+}
+/* line 18, src\css\controls\flags\controls-hidden.less */
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-state-playing:not(.jw-flag-touch.jw-breakpoint-4):not(.jw-flag-touch.jw-breakpoint-5):not(.jw-flag-touch.jw-breakpoint-6):not(.jw-flag-touch.jw-breakpoint-7) .jw-nextup-container {
+  -webkit-transform: translateY(66px);
+          transform: translateY(66px);
+}
+/* line 28, src\css\controls\flags\controls-hidden.less */
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-state-playing.jw-flag-touch.jw-state-playing.jw-breakpoint-7 .jw-nextup-container,
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-state-playing.jw-flag-touch.jw-state-playing.jw-breakpoint-6 .jw-nextup-container,
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-state-playing.jw-flag-touch.jw-state-playing.jw-breakpoint-5 .jw-nextup-container,
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-state-playing.jw-flag-touch.jw-state-playing.jw-breakpoint-4 .jw-nextup-container {
+  /* For bottom styling from touch.less */
+  -webkit-transform: translateY(4.25em);
+          transform: translateY(4.25em);
+}
+/* line 8, src\css\controls\flags\user-inactive.less */
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-state-playing:not(.jw-flag-controls-hidden) .jw-media {
+  cursor: none;
+  /* cursor hiding on media elements for Safari */
+  -webkit-cursor-visibility: auto-hide;
+}
+/* line 15, src\css\controls\flags\user-inactive.less */
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-state-playing.jw-flag-casting .jw-display {
+  display: flex;
+}
+/* line 21, src\css\controls\flags\user-inactive.less */
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-state-playing:not(.jw-flag-ads) .jw-autostart-mute {
+  display: flex;
+}
+/* line 28, src\css\controls\flags\user-inactive.less */
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-flag-casting .jw-nextup-container {
+  bottom: 66px;
+}
+/* line 33, src\css\controls\flags\user-inactive.less */
+.jwplayer.jw-flag-user-inactive:not(.jw-flag-media-audio).jw-flag-casting.jw-state-idle .jw-nextup-container {
+  display: none;
+}
+/* line 2, src\css\controls\flags\media-audio.less */
+.jw-flag-media-audio .jw-preview {
+  display: block;
+}
+/* line 3, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads {
+  /* captions styles code specific to native text track rendering */
+}
+/* line 4, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads .jw-preview,
+.jwplayer.jw-flag-ads .jw-logo,
+.jwplayer.jw-flag-ads .jw-captions.jw-captions-enabled,
+.jwplayer.jw-flag-ads .jw-nextup-container,
+.jwplayer.jw-flag-ads .jw-text-duration,
+.jwplayer.jw-flag-ads .jw-text-elapsed {
+  display: none;
+}
+/* line 14, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads video::-webkit-media-text-track-container {
+  display: none;
+}
+/* line 19, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads.jw-flag-small-player .jw-display-icon-rewind,
+.jwplayer.jw-flag-ads.jw-flag-small-player .jw-display-icon-next,
+.jwplayer.jw-flag-ads.jw-flag-small-player .jw-display-icon-display {
+  display: none;
+}
+/* line 25, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads.jw-flag-small-player.jw-state-buffering .jw-display-icon-display {
+  display: inline-block;
+}
+/* line 30, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads .jw-controlbar {
+  flex-direction: column-reverse;
+}
+/* line 33, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads .jw-controlbar .jw-slider-time {
+  height: auto;
+  padding: 0;
+  pointer-events: none;
+}
+/* line 38, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads .jw-controlbar .jw-slider-time .jw-slider-container {
+  height: 5px;
+}
+/* line 42, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads .jw-controlbar .jw-slider-time .jw-rail,
+.jwplayer.jw-flag-ads .jw-controlbar .jw-slider-time .jw-knob,
+.jwplayer.jw-flag-ads .jw-controlbar .jw-slider-time .jw-buffer,
+.jwplayer.jw-flag-ads .jw-controlbar .jw-slider-time .jw-cue,
+.jwplayer.jw-flag-ads .jw-controlbar .jw-slider-time .jw-icon-settings {
+  display: none;
+}
+/* line 50, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads .jw-controlbar .jw-slider-time .jw-progress {
+  -webkit-transform: none;
+          transform: none;
+  top: auto;
+}
+/* line 56, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads .jw-controlbar .jw-tooltip,
+.jwplayer.jw-flag-ads .jw-controlbar .jw-icon-tooltip:not(.jw-icon-volume),
+.jwplayer.jw-flag-ads .jw-controlbar .jw-icon-inline:not(.jw-icon-playback):not(.jw-icon-fullscreen):not(.jw-icon-volume) {
+  display: none;
+}
+/* line 62, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads .jw-controlbar .jw-volume-tip {
+  padding: 13px 0;
+}
+/* line 66, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads .jw-controlbar .jw-text-alt {
+  display: flex;
+}
+/* line 71, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads .jw-fullscreen-ima {
+  display: none;
+}
+/* line 80, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads.jw-flag-ads.jw-state-playing.jw-flag-touch:not(.jw-flag-ads-vpaid) .jw-controls .jw-controlbar,
+.jwplayer.jw-flag-ads.jw-flag-ads.jw-state-playing.jw-flag-touch:not(.jw-flag-ads-vpaid).jw-flag-autostart .jw-controls .jw-controlbar {
+  display: flex;
+  pointer-events: all;
+  visibility: visible;
+  opacity: 1;
+}
+/* line 87, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads.jw-flag-ads.jw-state-playing.jw-flag-touch:not(.jw-flag-ads-vpaid).jw-flag-user-inactive .jw-controls-backdrop,
+.jwplayer.jw-flag-ads.jw-flag-ads.jw-state-playing.jw-flag-touch:not(.jw-flag-ads-vpaid).jw-flag-autostart.jw-flag-user-inactive .jw-controls-backdrop {
+  opacity: 1;
+  background-size: 100% 60px;
+}
+/* line 98, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads-vpaid .jw-display-container,
+.jwplayer.jw-flag-touch.jw-flag-ads-vpaid .jw-display-container,
+.jwplayer.jw-flag-ads-vpaid .jw-skip,
+.jwplayer.jw-flag-touch.jw-flag-ads-vpaid .jw-skip {
+  display: none;
+}
+/* line 106, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads-vpaid.jw-flag-small-player .jw-controls {
+  background: none;
+}
+/* line 109, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads-vpaid.jw-flag-small-player .jw-controls::after {
+  content: none;
+}
+/* line 117, src\css\controls\flags\ads.less */
+.jwplayer.jw-flag-ads-hide-controls .jw-controls-backdrop,
+.jwplayer.jw-flag-ads-hide-controls .jw-controls {
+  /* Important is required to controls are never displayed */
+  /* stylelint-disable-next-line declaration-no-important */
+  display: none !important;
+}
+/* line 3, src\css\controls\flags\overlay.less */
+.jw-flag-overlay-open-related .jw-controls,
+.jw-flag-overlay-open-related .jw-title,
+.jw-flag-overlay-open-related .jw-logo {
+  display: none;
+}
+/* line 1, src\css\controls\flags\rightclick-open.less */
+.jwplayer.jw-flag-rightclick-open {
+  overflow: visible;
+}
+/* line 4, src\css\controls\flags\rightclick-open.less */
+.jwplayer.jw-flag-rightclick-open .jw-rightclick {
+  z-index: 16777215;
+}
+/* line 6, src\css\controls\flags\touch.less */
+.jw-flag-touch.jw-breakpoint-7 .jw-captions,
+.jw-flag-touch.jw-breakpoint-6 .jw-captions,
+.jw-flag-touch.jw-breakpoint-5 .jw-captions,
+.jw-flag-touch.jw-breakpoint-4 .jw-captions,
+.jw-flag-touch.jw-breakpoint-7 .jw-nextup-container,
+.jw-flag-touch.jw-breakpoint-6 .jw-nextup-container,
+.jw-flag-touch.jw-breakpoint-5 .jw-nextup-container,
+.jw-flag-touch.jw-breakpoint-4 .jw-nextup-container {
+  /* control bar is (1.5*2.5 = 3.75)em for mobile, so bottom should be 0.5 above that */
+  bottom: 4.25em;
+}
+/* line 13, src\css\controls\flags\touch.less */
+.jw-flag-touch .jw-controlbar .jw-icon-volume {
+  display: flex;
+}
+/* line 17, src\css\controls\flags\touch.less */
+.jw-flag-touch .jw-display,
+.jw-flag-touch .jw-display-container,
+.jw-flag-touch .jw-display-controls {
+  pointer-events: none;
+}
+/* line 26, src\css\controls\flags\touch.less */
+.jw-flag-touch.jw-state-paused:not(.jw-breakpoint-1) .jw-display-icon-next,
+.jw-flag-touch.jw-state-playing:not(.jw-breakpoint-1) .jw-display-icon-next,
+.jw-flag-touch.jw-state-paused:not(.jw-breakpoint-1) .jw-display-icon-rewind,
+.jw-flag-touch.jw-state-playing:not(.jw-breakpoint-1) .jw-display-icon-rewind {
+  display: none;
+}
+/* line 34, src\css\controls\flags\touch.less */
+.jw-flag-touch.jw-state-paused.jw-flag-dragging .jw-display {
+  display: none;
+}
+/* line 3, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player {
+  background-color: #000;
+}
+/* line 6, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-media {
+  visibility: hidden;
+}
+/* line 10, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-title {
+  background: none;
+}
+/* line 14, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player:not(.jw-flag-live) .jw-spacer {
+  display: none;
+}
+/* line 18, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-preview,
+.jw-flag-audio-player .jw-display,
+.jw-flag-audio-player .jw-title,
+.jw-flag-audio-player .jw-nextup-container {
+  display: none;
+}
+/* line 25, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-controlbar {
+  position: relative;
+}
+/* line 29, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-controlbar .jw-button-container {
+  padding-right: 3px;
+  padding-left: 0;
+  justify-content: flex-start;
+}
+/* line 35, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-controlbar .jw-icon-tooltip,
+.jw-flag-audio-player .jw-controlbar .jw-icon-inline {
+  display: none;
+}
+/* line 40, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-controlbar .jw-icon-volume,
+.jw-flag-audio-player .jw-controlbar .jw-icon-playback,
+.jw-flag-audio-player .jw-controlbar .jw-icon-next,
+.jw-flag-audio-player .jw-controlbar .jw-icon-rewind,
+.jw-flag-audio-player .jw-controlbar .jw-icon-cast,
+.jw-flag-audio-player .jw-controlbar .jw-text-live,
+.jw-flag-audio-player .jw-controlbar .jw-icon-airplay,
+.jw-flag-audio-player .jw-controlbar .jw-logo-button,
+.jw-flag-audio-player .jw-controlbar .jw-text-elapsed,
+.jw-flag-audio-player .jw-controlbar .jw-text-duration {
+  display: flex;
+  flex: 0 0 auto;
+}
+/* line 54, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-controlbar .jw-text-duration,
+.jw-flag-audio-player .jw-controlbar .jw-text-countdown {
+  padding-right: 10px;
+}
+/* line 59, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-controlbar .jw-slider-time {
+  flex: 0 1 auto;
+  align-items: center;
+  display: flex;
+  order: 1;
+}
+/* line 66, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-controlbar .jw-icon-volume {
+  margin-right: 0;
+  transition: margin-right 150ms cubic-bezier(0, 0.25, 0.25, 1);
+}
+/* line 70, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-controlbar .jw-icon-volume .jw-overlay {
+  display: none;
+}
+/* line 76, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-controlbar .jw-horizontal-volume-container ~ .jw-slider-time {
+  transition: opacity 300ms, width 300ms;
+}
+/* line 80, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-controlbar .jw-horizontal-volume-container.jw-open ~ .jw-slider-time {
+  flex: 1 1 auto;
+  width: auto;
+}
+/* line 86, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player .jw-controlbar .jw-slider-volume ~ .jw-icon-volume {
+  margin-right: 140px;
+}
+/* line 93, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player.jw-breakpoint-1 .jw-horizontal-volume-container.jw-open ~ .jw-slider-time,
+.jw-flag-audio-player.jw-breakpoint-2 .jw-horizontal-volume-container.jw-open ~ .jw-slider-time {
+  opacity: 0;
+}
+/* line 99, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player.jw-flag-small-player .jw-text-elapsed,
+.jw-flag-audio-player.jw-flag-small-player .jw-text-duration {
+  display: none;
+}
+/* line 106, src\css\controls\flags\audioplayer.less */
+.jw-flag-audio-player.jw-flag-ads .jw-slider-time {
+  display: none;
+}
+/* line 1, src\css\controls\imports\utilities.less */
+.jw-hidden {
+  display: none;
+}
