@@ -1,1 +1,1 @@
-# jwpalyer
+# jwplayer
